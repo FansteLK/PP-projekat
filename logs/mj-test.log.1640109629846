@@ -1,0 +1,487 @@
+INFO  18:56:23,357 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:56:23,411 - #2 program
+INFO  18:56:23,411 - #51 p
+INFO  18:56:23,411 - #8 const
+INFO  18:56:23,412 - #51 int
+INFO  18:56:23,412 - #51 size
+INFO  18:56:23,413 - #35 =
+INFO  18:56:23,413 - #48 10
+INFO  18:56:23,413 - #38 ;
+INFO  18:56:23,414 - #46 {
+INFO  18:56:23,414 - #3 void
+INFO  18:56:23,415 - #51 main
+INFO  18:56:23,415 - #42 (
+INFO  18:56:23,415 - #43 )
+INFO  18:56:23,416 - #51 int
+INFO  18:56:23,416 - #51 x
+INFO  18:56:23,416 - #40 ,
+INFO  18:56:23,417 - #51 i
+INFO  18:56:23,417 - #38 ;
+INFO  18:56:23,418 - #51 char
+INFO  18:56:23,418 - #51 c
+INFO  18:56:23,418 - #38 ;
+INFO  18:56:23,418 - #46 {
+INFO  18:56:23,426 - #9 if
+INFO  18:56:23,427 - #42 (
+INFO  18:56:23,427 - #51 x
+INFO  18:56:23,427 - #29 >
+INFO  18:56:23,429 - #48 5
+INFO  18:56:23,429 - #43 )
+INFO  18:56:23,430 - #46 {
+INFO  18:56:23,430 - #20 goto
+INFO  18:56:23,430 - #51 skip
+INFO  18:56:23,431 - #38 ;
+INFO  18:56:23,431 - #47 }
+INFO  18:56:23,432 - #51 i
+INFO  18:56:23,432 - #35 =
+INFO  18:56:23,432 - #48 0
+INFO  18:56:23,433 - #38 ;
+INFO  18:56:23,433 - #10 do
+INFO  18:56:23,433 - #46 {
+INFO  18:56:23,434 - #9 if
+INFO  18:56:23,434 - #42 (
+INFO  18:56:23,434 - #51 x
+INFO  18:56:23,434 - #32 <=
+INFO  18:56:23,434 - #48 0
+INFO  18:56:23,434 - #43 )
+INFO  18:56:23,434 - #4 break
+INFO  18:56:23,435 - #38 ;
+INFO  18:56:23,435 - #9 if
+INFO  18:56:23,435 - #42 (
+INFO  18:56:23,435 - #48 0
+INFO  18:56:23,436 - #32 <=
+INFO  18:56:23,436 - #51 x
+INFO  18:56:23,436 - #33 &&
+INFO  18:56:23,436 - #51 x
+INFO  18:56:23,436 - #31 <
+INFO  18:56:23,436 - #51 size
+INFO  18:56:23,437 - #43 )
+INFO  18:56:23,437 - #46 {
+INFO  18:56:23,437 - #47 }
+INFO  18:56:23,437 - #7 else
+INFO  18:56:23,437 - #9 if
+INFO  18:56:23,437 - #42 (
+INFO  18:56:23,437 - #23 -
+INFO  18:56:23,437 - #51 size
+INFO  18:56:23,438 - #31 <
+INFO  18:56:23,438 - #51 x
+INFO  18:56:23,438 - #33 &&
+INFO  18:56:23,438 - #51 x
+INFO  18:56:23,438 - #31 <
+INFO  18:56:23,438 - #48 0
+INFO  18:56:23,438 - #43 )
+INFO  18:56:23,438 - #38 ;
+ERROR 18:56:23,438 - 
+Sintaksna greska na liniji 22
+INFO  18:56:23,438 - #46 {
+INFO  18:56:23,439 - #47 }
+INFO  18:56:23,439 - #47 }
+ERROR 18:56:23,439 - Izvrsen oporavak konstrukcije dodele u liniji 22
+INFO  18:56:23,440 - #11 while
+INFO  18:56:23,440 - #42 (
+INFO  18:56:23,440 - #50 true
+INFO  18:56:23,440 - #43 )
+INFO  18:56:23,441 - #38 ;
+INFO  18:56:23,441 - #47 }
+INFO  18:56:23,441 - #47 }
+INFO  18:56:23,447 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                UmnatchedStatement(
+                  SingleCondTerm(
+                    SingleCondFact(
+                      ConditionFact(
+                        CondFactExpr(
+                          TermExpression(
+                            SingleFactor(
+                              FunctionCall(
+                                Designator(
+                                  Base(
+                                   x
+                                  ) [Base]
+                                  NoDesignatorAdded(
+                                  ) [NoDesignatorAdded]
+                                ) [Designator]
+                                NoFactorActPars(
+                                ) [NoFactorActPars]
+                              ) [FunctionCall]
+                            ) [SingleFactor]
+                          ) [TermExpression]
+                        ) [CondFactExpr]
+                        RelopGreater(
+                        ) [RelopGreater]
+                        TermExpression(
+                          SingleFactor(
+                            NumConstFactor(
+                            ) [NumConstFactor]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                      ) [ConditionFact]
+                    ) [SingleCondFact]
+                  ) [SingleCondTerm]
+                  StatementDerived1(
+                    MultipleStatements(
+                      StatementListNotEmpty(
+                        NoStatements(
+                        ) [NoStatements]
+                        SingleStatementNoLabel(
+                          GoToStmt(
+                            Label(
+                             skip
+                            ) [Label]
+                          ) [GoToStmt]
+                        ) [SingleStatementNoLabel]
+                      ) [StatementListNotEmpty]
+                    ) [MultipleStatements]
+                  ) [StatementDerived1]
+                ) [UmnatchedStatement]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     i
+                    ) [Base]
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            DoWhileStmt(
+              StatementDerived1(
+                MultipleStatements(
+                  StatementListNotEmpty(
+                    StatementListNotEmpty(
+                      StatementListNotEmpty(
+                        NoStatements(
+                        ) [NoStatements]
+                        SingleStatementNoLabel(
+                          UmnatchedStatement(
+                            SingleCondTerm(
+                              SingleCondFact(
+                                ConditionFact(
+                                  CondFactExpr(
+                                    TermExpression(
+                                      SingleFactor(
+                                        FunctionCall(
+                                          Designator(
+                                            Base(
+                                             x
+                                            ) [Base]
+                                            NoDesignatorAdded(
+                                            ) [NoDesignatorAdded]
+                                          ) [Designator]
+                                          NoFactorActPars(
+                                          ) [NoFactorActPars]
+                                        ) [FunctionCall]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [CondFactExpr]
+                                  RelopLTE(
+                                  ) [RelopLTE]
+                                  TermExpression(
+                                    SingleFactor(
+                                      NumConstFactor(
+                                      ) [NumConstFactor]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [ConditionFact]
+                              ) [SingleCondFact]
+                            ) [SingleCondTerm]
+                            SingleStatementNoLabel(
+                              BreakStmt(
+                              ) [BreakStmt]
+                            ) [SingleStatementNoLabel]
+                          ) [UmnatchedStatement]
+                        ) [SingleStatementNoLabel]
+                      ) [StatementListNotEmpty]
+                      SingleStatementNoLabel(
+                        MatchedStatement(
+                          SingleCondTerm(
+                            ConditionTerm(
+                              SingleCondFact(
+                                ConditionFact(
+                                  CondFactExpr(
+                                    TermExpression(
+                                      SingleFactor(
+                                        NumConstFactor(
+                                        ) [NumConstFactor]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [CondFactExpr]
+                                  RelopLTE(
+                                  ) [RelopLTE]
+                                  TermExpression(
+                                    SingleFactor(
+                                      FunctionCall(
+                                        Designator(
+                                          Base(
+                                           x
+                                          ) [Base]
+                                          NoDesignatorAdded(
+                                          ) [NoDesignatorAdded]
+                                        ) [Designator]
+                                        NoFactorActPars(
+                                        ) [NoFactorActPars]
+                                      ) [FunctionCall]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [ConditionFact]
+                              ) [SingleCondFact]
+                              ConditionFact(
+                                CondFactExpr(
+                                  TermExpression(
+                                    SingleFactor(
+                                      FunctionCall(
+                                        Designator(
+                                          Base(
+                                           x
+                                          ) [Base]
+                                          NoDesignatorAdded(
+                                          ) [NoDesignatorAdded]
+                                        ) [Designator]
+                                        NoFactorActPars(
+                                        ) [NoFactorActPars]
+                                      ) [FunctionCall]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [CondFactExpr]
+                                RelopLess(
+                                ) [RelopLess]
+                                TermExpression(
+                                  SingleFactor(
+                                    FunctionCall(
+                                      Designator(
+                                        Base(
+                                         size
+                                        ) [Base]
+                                        NoDesignatorAdded(
+                                        ) [NoDesignatorAdded]
+                                      ) [Designator]
+                                      NoFactorActPars(
+                                      ) [NoFactorActPars]
+                                    ) [FunctionCall]
+                                  ) [SingleFactor]
+                                ) [TermExpression]
+                              ) [ConditionFact]
+                            ) [ConditionTerm]
+                          ) [SingleCondTerm]
+                          StatementDerived1(
+                            MultipleStatements(
+                              NoStatements(
+                              ) [NoStatements]
+                            ) [MultipleStatements]
+                          ) [StatementDerived1]
+                          SingleStatementNoLabel(
+                            UmnatchedStatement(
+                              SingleCondTerm(
+                                ConditionTerm(
+                                  SingleCondFact(
+                                    ConditionFact(
+                                      CondFactExpr(
+                                        MinusTermExpression(
+                                          SingleFactor(
+                                            FunctionCall(
+                                              Designator(
+                                                Base(
+                                                 size
+                                                ) [Base]
+                                                NoDesignatorAdded(
+                                                ) [NoDesignatorAdded]
+                                              ) [Designator]
+                                              NoFactorActPars(
+                                              ) [NoFactorActPars]
+                                            ) [FunctionCall]
+                                          ) [SingleFactor]
+                                        ) [MinusTermExpression]
+                                      ) [CondFactExpr]
+                                      RelopLess(
+                                      ) [RelopLess]
+                                      TermExpression(
+                                        SingleFactor(
+                                          FunctionCall(
+                                            Designator(
+                                              Base(
+                                               x
+                                              ) [Base]
+                                              NoDesignatorAdded(
+                                              ) [NoDesignatorAdded]
+                                            ) [Designator]
+                                            NoFactorActPars(
+                                            ) [NoFactorActPars]
+                                          ) [FunctionCall]
+                                        ) [SingleFactor]
+                                      ) [TermExpression]
+                                    ) [ConditionFact]
+                                  ) [SingleCondFact]
+                                  ConditionFact(
+                                    CondFactExpr(
+                                      TermExpression(
+                                        SingleFactor(
+                                          FunctionCall(
+                                            Designator(
+                                              Base(
+                                               x
+                                              ) [Base]
+                                              NoDesignatorAdded(
+                                              ) [NoDesignatorAdded]
+                                            ) [Designator]
+                                            NoFactorActPars(
+                                            ) [NoFactorActPars]
+                                          ) [FunctionCall]
+                                        ) [SingleFactor]
+                                      ) [TermExpression]
+                                    ) [CondFactExpr]
+                                    RelopLess(
+                                    ) [RelopLess]
+                                    TermExpression(
+                                      SingleFactor(
+                                        NumConstFactor(
+                                        ) [NumConstFactor]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [ConditionFact]
+                                ) [ConditionTerm]
+                              ) [SingleCondTerm]
+                              SingleStatementNoLabel(
+                                DesignatorStmt(
+                                  ErrorDesignatorStatement(
+                                  ) [ErrorDesignatorStatement]
+                                ) [DesignatorStmt]
+                              ) [SingleStatementNoLabel]
+                            ) [UmnatchedStatement]
+                          ) [SingleStatementNoLabel]
+                        ) [MatchedStatement]
+                      ) [SingleStatementNoLabel]
+                    ) [StatementListNotEmpty]
+                    StatementDerived1(
+                      MultipleStatements(
+                        NoStatements(
+                        ) [NoStatements]
+                      ) [MultipleStatements]
+                    ) [StatementDerived1]
+                  ) [StatementListNotEmpty]
+                ) [MultipleStatements]
+              ) [StatementDerived1]
+              SingleCondTerm(
+                SingleCondFact(
+                  CondFactExpr(
+                    TermExpression(
+                      SingleFactor(
+                        BoolConstFactor(
+                        ) [BoolConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [CondFactExpr]
+                ) [SingleCondFact]
+              ) [SingleCondTerm]
+            ) [DoWhileStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:56:23,448 - ===================================
+INFO  18:56:23,451 - Obradjuje se funkcija main na liniji 7
+INFO  18:56:23,451 - Deklarisana promenljiva x na liniji 7
+INFO  18:56:23,451 - Deklarisana promenljiva i na liniji 7
+INFO  18:56:23,451 - Deklarisana promenljiva c na liniji 7
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 10
+INFO  18:56:23,452 - Pristupa se promenljivoj i na liniji 14
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 17
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 18
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 18
+ERROR 18:56:23,452 - Greska na liniji 18 :ime size nije deklarisano!
+ERROR 18:56:23,452 - Greska na liniji 22 :ime size nije deklarisano!
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 22
+INFO  18:56:23,452 - Pristupa se promenljivoj x na liniji 22
+INFO  18:56:23,452 -  Deklarisanih promenljivih ima = 2
+INFO  18:56:23,452 - ===================================

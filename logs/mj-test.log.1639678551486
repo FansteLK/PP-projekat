@@ -1,0 +1,55 @@
+INFO  19:15:22,908 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  19:15:22,988 - #2 program
+INFO  19:15:22,988 - #51 MJProgram
+INFO  19:15:22,989 - #51 int
+INFO  19:15:22,990 - #51 x
+INFO  19:15:22,991 - #38 ;
+INFO  19:15:22,992 - #46 {
+INFO  19:15:22,994 - #51 int
+INFO  19:15:22,995 - #51 main
+INFO  19:15:22,995 - #42 (
+INFO  19:15:22,995 - #43 )
+INFO  19:15:22,996 - #46 {
+INFO  19:15:22,997 - #47 }
+INFO  19:15:22,998 - #47 }
+INFO  19:15:23,000 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:15:23,001 - ===================================
+INFO  19:15:23,004 -  Deklarisanih promenljivih ima = 1

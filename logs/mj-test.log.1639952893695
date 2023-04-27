@@ -1,0 +1,201 @@
+INFO  22:16:04,912 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  22:16:04,967 - #2 program
+INFO  22:16:04,967 - #51 p
+INFO  22:16:04,968 - #51 Table
+INFO  22:16:04,969 - #51 val
+INFO  22:16:04,969 - #38 ;
+INFO  22:16:04,971 - #51 Board
+INFO  22:16:04,971 - #51 board
+INFO  22:16:04,971 - #38 ;
+INFO  22:16:04,971 - #46 {
+INFO  22:16:04,971 - #3 void
+INFO  22:16:04,972 - #51 main
+INFO  22:16:04,972 - #42 (
+INFO  22:16:04,972 - #43 )
+INFO  22:16:04,973 - #51 int
+INFO  22:16:04,974 - #51 x
+INFO  22:16:04,974 - #44 [
+INFO  22:16:04,974 - #45 ]
+INFO  22:16:04,974 - #40 ,
+INFO  22:16:04,975 - #51 i
+INFO  22:16:04,975 - #38 ;
+INFO  22:16:04,975 - #51 char
+INFO  22:16:04,976 - #51 c
+INFO  22:16:04,976 - #38 ;
+INFO  22:16:04,976 - #46 {
+INFO  22:16:04,976 - #51 x
+INFO  22:16:04,977 - #44 [
+INFO  22:16:04,978 - #48 3
+INFO  22:16:04,978 - #45 ]
+INFO  22:16:04,978 - #35 =
+INFO  22:16:04,979 - #48 3
+INFO  22:16:04,979 - #38 ;
+INFO  22:16:04,980 - #51 i
+INFO  22:16:04,980 - #35 =
+INFO  22:16:04,980 - #48 2
+INFO  22:16:04,980 - #38 ;
+INFO  22:16:04,980 - #47 }
+INFO  22:16:04,980 - #47 }
+INFO  22:16:04,985 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      VarDeclaration(
+        VariableDeclaration(
+          Type(
+           Table
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             val
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclaration]
+    ) [Declarations]
+    VarDeclaration(
+      VariableDeclaration(
+        Type(
+         Board
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           board
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VariableDeclaration]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  WithBrackets(
+                  ) [WithBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     x
+                    ) [Base]
+                    DesignatorAdded(
+                      NoDesignatorAdded(
+                      ) [NoDesignatorAdded]
+                      DesignatorArray(
+                        TermExpression(
+                          SingleFactor(
+                            NumConstFactor(
+                            ) [NumConstFactor]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                      ) [DesignatorArray]
+                    ) [DesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            DesignatorStmt(
+              DesignatorStatmentNoError(
+                Designator(
+                  Base(
+                   i
+                  ) [Base]
+                  NoDesignatorAdded(
+                  ) [NoDesignatorAdded]
+                ) [Designator]
+                DesignatorAssign(
+                  Assignop(
+                  ) [Assignop]
+                  TermExpression(
+                    SingleFactor(
+                      NumConstFactor(
+                      ) [NumConstFactor]
+                    ) [SingleFactor]
+                  ) [TermExpression]
+                ) [DesignatorAssign]
+              ) [DesignatorStatmentNoError]
+            ) [DesignatorStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  22:16:04,986 - ===================================
+ERROR 22:16:04,988 - Nije pronadjen tipTable u tabeli simbola!
+INFO  22:16:04,988 - Deklarisana promenljiva val na liniji 3
+ERROR 22:16:04,988 - Nije pronadjen tipBoard u tabeli simbola!
+INFO  22:16:04,988 - Deklarisana promenljiva board na liniji 4
+INFO  22:16:04,989 - Obradjuje se funkcija main na liniji 7
+INFO  22:16:04,989 - Deklarisana niz promenljiva x na liniji 7
+INFO  22:16:04,989 - Deklarisana promenljiva i na liniji 7
+INFO  22:16:04,989 - Deklarisana promenljiva c na liniji 7
+INFO  22:16:04,989 - Pristupa se elementu niza x na liniji 9
+INFO  22:16:04,989 -  Deklarisanih promenljivih ima = 4
+INFO  22:16:04,989 - ===================================

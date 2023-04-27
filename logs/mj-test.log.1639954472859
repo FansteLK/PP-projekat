@@ -1,0 +1,250 @@
+INFO  23:52:35,310 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  23:52:35,368 - #2 program
+INFO  23:52:35,368 - #51 p
+INFO  23:52:35,368 - #51 Table
+INFO  23:52:35,370 - #51 val
+INFO  23:52:35,370 - #38 ;
+INFO  23:52:35,371 - #51 Board
+INFO  23:52:35,372 - #51 board
+INFO  23:52:35,372 - #38 ;
+INFO  23:52:35,372 - #46 {
+INFO  23:52:35,372 - #51 int
+INFO  23:52:35,373 - #51 nesto
+INFO  23:52:35,373 - #42 (
+INFO  23:52:35,373 - #43 )
+INFO  23:52:35,374 - #46 {
+INFO  23:52:35,375 - #47 }
+INFO  23:52:35,375 - #3 void
+INFO  23:52:35,376 - #51 main
+INFO  23:52:35,376 - #42 (
+INFO  23:52:35,376 - #43 )
+INFO  23:52:35,376 - #51 int
+INFO  23:52:35,376 - #51 x
+INFO  23:52:35,376 - #44 [
+INFO  23:52:35,379 - #45 ]
+INFO  23:52:35,379 - #40 ,
+INFO  23:52:35,379 - #51 i
+INFO  23:52:35,379 - #38 ;
+INFO  23:52:35,380 - #51 char
+INFO  23:52:35,380 - #51 c
+INFO  23:52:35,380 - #38 ;
+INFO  23:52:35,380 - #46 {
+INFO  23:52:35,380 - #51 x
+INFO  23:52:35,380 - #44 [
+INFO  23:52:35,380 - #48 3
+INFO  23:52:35,381 - #45 ]
+INFO  23:52:35,381 - #35 =
+INFO  23:52:35,382 - #48 3
+INFO  23:52:35,382 - #38 ;
+INFO  23:52:35,383 - #51 i
+INFO  23:52:35,383 - #35 =
+INFO  23:52:35,383 - #48 2
+INFO  23:52:35,383 - #38 ;
+INFO  23:52:35,383 - #51 nesto
+INFO  23:52:35,383 - #42 (
+INFO  23:52:35,383 - #43 )
+INFO  23:52:35,384 - #38 ;
+INFO  23:52:35,384 - #47 }
+INFO  23:52:35,384 - #47 }
+INFO  23:52:35,389 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      VarDeclaration(
+        VariableDeclaration(
+          Type(
+           Table
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             val
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclaration]
+    ) [Declarations]
+    VarDeclaration(
+      VariableDeclaration(
+        Type(
+         Board
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           board
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VariableDeclaration]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecls(
+      ) [NoMethodDecls]
+      MethodDeclaration(
+        MethodDeclType(
+          Type(
+           int
+          ) [Type]
+         nesto
+        ) [MethodDeclType]
+        NoFormParams(
+        ) [NoFormParams]
+        NoVarDecls(
+        ) [NoVarDecls]
+        MultipleStatements(
+          NoStatements(
+          ) [NoStatements]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  WithBrackets(
+                  ) [WithBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                DesignatorStmt(
+                  DesignatorStatmentNoError(
+                    Designator(
+                      Base(
+                       x
+                      ) [Base]
+                      DesignatorAdded(
+                        NoDesignatorAdded(
+                        ) [NoDesignatorAdded]
+                        DesignatorArray(
+                          TermExpression(
+                            SingleFactor(
+                              NumConstFactor(
+                              ) [NumConstFactor]
+                            ) [SingleFactor]
+                          ) [TermExpression]
+                        ) [DesignatorArray]
+                      ) [DesignatorAdded]
+                    ) [Designator]
+                    DesignatorAssign(
+                      Assignop(
+                      ) [Assignop]
+                      TermExpression(
+                        SingleFactor(
+                          NumConstFactor(
+                          ) [NumConstFactor]
+                        ) [SingleFactor]
+                      ) [TermExpression]
+                    ) [DesignatorAssign]
+                  ) [DesignatorStatmentNoError]
+                ) [DesignatorStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     i
+                    ) [Base]
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            DesignatorStmt(
+              DesignatorStatmentNoError(
+                Designator(
+                  Base(
+                   nesto
+                  ) [Base]
+                  NoDesignatorAdded(
+                  ) [NoDesignatorAdded]
+                ) [Designator]
+                DesignatorFuncCall(
+                  EmptyActualParsList(
+                  ) [EmptyActualParsList]
+                ) [DesignatorFuncCall]
+              ) [DesignatorStatmentNoError]
+            ) [DesignatorStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:52:35,390 - ===================================
+ERROR 23:52:35,393 - Nije pronadjen tipTable u tabeli simbola!
+INFO  23:52:35,393 - Deklarisana promenljiva val na liniji 3
+ERROR 23:52:35,393 - Nije pronadjen tipBoard u tabeli simbola!
+INFO  23:52:35,393 - Deklarisana promenljiva board na liniji 4
+INFO  23:52:35,393 - Obradjuje se funkcija nesto na liniji 6
+INFO  23:52:35,393 - Obradjuje se funkcija main na liniji 9
+INFO  23:52:35,393 - Deklarisana niz promenljiva x na liniji 9
+INFO  23:52:35,393 - Deklarisana promenljiva i na liniji 9
+INFO  23:52:35,393 - Deklarisana promenljiva c na liniji 9
+INFO  23:52:35,394 - Pristupa se elementu niza x na liniji 11
+INFO  23:52:35,394 - Pronadjen poziv funkcije nesto na liniji 5
+INFO  23:52:35,394 -  Deklarisanih promenljivih ima = 4
+INFO  23:52:35,394 - ===================================

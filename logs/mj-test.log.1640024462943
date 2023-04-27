@@ -1,0 +1,173 @@
+INFO  19:20:08,318 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  19:20:08,371 - #2 program
+INFO  19:20:08,371 - #51 p
+INFO  19:20:08,371 - #46 {
+INFO  19:20:08,372 - #3 void
+INFO  19:20:08,372 - #51 main
+INFO  19:20:08,372 - #42 (
+INFO  19:20:08,373 - #43 )
+INFO  19:20:08,373 - #51 int
+INFO  19:20:08,374 - #51 x
+INFO  19:20:08,374 - #40 ,
+INFO  19:20:08,375 - #51 i
+INFO  19:20:08,375 - #38 ;
+INFO  19:20:08,376 - #51 char
+INFO  19:20:08,376 - #51 c
+INFO  19:20:08,376 - #38 ;
+INFO  19:20:08,376 - #46 {
+INFO  19:20:08,376 - #51 val
+INFO  19:20:08,377 - #41 .
+INFO  19:20:08,377 - #51 putn
+INFO  19:20:08,377 - #42 (
+INFO  19:20:08,378 - #51 val
+INFO  19:20:08,378 - #41 .
+INFO  19:20:08,378 - #51 getn
+INFO  19:20:08,378 - #42 (
+INFO  19:20:08,379 - #51 x
+INFO  19:20:08,379 - #43 )
+INFO  19:20:08,380 - #22 +
+INFO  19:20:08,380 - #48 1
+INFO  19:20:08,381 - #43 )
+INFO  19:20:08,381 - #38 ;
+INFO  19:20:08,381 - #47 }
+INFO  19:20:08,382 - #47 }
+INFO  19:20:08,387 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            DesignatorStmt(
+              DesignatorStatmentNoError(
+                Designator(
+                  Base(
+                   val
+                  ) [Base]
+                  DesignatorAdded(
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                    DesignatorDot(
+                     putn
+                    ) [DesignatorDot]
+                  ) [DesignatorAdded]
+                ) [Designator]
+                DesignatorFuncCall(
+                  ActualParsList(
+                    SingleExpr(
+                      Expression(
+                        TermExpression(
+                          SingleFactor(
+                            FunctionCall(
+                              Designator(
+                                Base(
+                                 val
+                                ) [Base]
+                                DesignatorAdded(
+                                  NoDesignatorAdded(
+                                  ) [NoDesignatorAdded]
+                                  DesignatorDot(
+                                   getn
+                                  ) [DesignatorDot]
+                                ) [DesignatorAdded]
+                              ) [Designator]
+                              FactorActPars(
+                                SingleExpr(
+                                  TermExpression(
+                                    SingleFactor(
+                                      FunctionCall(
+                                        Designator(
+                                          Base(
+                                           x
+                                          ) [Base]
+                                          NoDesignatorAdded(
+                                          ) [NoDesignatorAdded]
+                                        ) [Designator]
+                                        NoFactorActPars(
+                                        ) [NoFactorActPars]
+                                      ) [FunctionCall]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [SingleExpr]
+                              ) [FactorActPars]
+                            ) [FunctionCall]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                        AddopPlus(
+                        ) [AddopPlus]
+                        SingleFactor(
+                          NumConstFactor(
+                          ) [NumConstFactor]
+                        ) [SingleFactor]
+                      ) [Expression]
+                    ) [SingleExpr]
+                  ) [ActualParsList]
+                ) [DesignatorFuncCall]
+              ) [DesignatorStatmentNoError]
+            ) [DesignatorStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:20:08,388 - ===================================
+INFO  19:20:08,390 - Obradjuje se funkcija main na liniji 3
+INFO  19:20:08,391 - Deklarisana promenljiva x na liniji 3
+INFO  19:20:08,391 - Deklarisana promenljiva i na liniji 3
+INFO  19:20:08,391 - Deklarisana promenljiva c na liniji 3
+ERROR 19:20:08,391 - Greska na liniji 5 :ime val nije deklarisano!
+ERROR 19:20:08,391 - Greska na liniji 5 :ime val nije deklarisano!
+ERROR 19:20:08,391 - Greska na liniji 5 ime: noObj nije funkcija!
+INFO  19:20:08,391 -  Deklarisanih promenljivih ima = 2
+INFO  19:20:08,391 - ===================================

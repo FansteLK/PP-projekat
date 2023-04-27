@@ -1,0 +1,379 @@
+INFO  19:00:29,850 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  19:00:29,916 - #2 program
+INFO  19:00:29,916 - #51 p
+INFO  19:00:29,917 - #8 const
+INFO  19:00:29,918 - #51 int
+INFO  19:00:29,918 - #51 size
+INFO  19:00:29,918 - #35 =
+INFO  19:00:29,919 - #48 10
+INFO  19:00:29,919 - #38 ;
+INFO  19:00:29,920 - #46 {
+INFO  19:00:29,920 - #3 void
+INFO  19:00:29,921 - #51 main
+INFO  19:00:29,921 - #42 (
+INFO  19:00:29,921 - #43 )
+INFO  19:00:29,922 - #51 int
+INFO  19:00:29,922 - #51 x
+INFO  19:00:29,922 - #40 ,
+INFO  19:00:29,923 - #51 i
+INFO  19:00:29,923 - #38 ;
+INFO  19:00:29,923 - #51 char
+INFO  19:00:29,924 - #51 c
+INFO  19:00:29,924 - #38 ;
+INFO  19:00:29,924 - #46 {
+INFO  19:00:29,926 - #9 if
+INFO  19:00:29,926 - #42 (
+INFO  19:00:29,926 - #51 x
+INFO  19:00:29,927 - #29 >
+ERROR 19:00:29,927 - 
+Sintaksna greska na liniji 10
+INFO  19:00:29,927 - #48 5
+INFO  19:00:29,927 - #43 )
+INFO  19:00:29,927 - #46 {
+ERROR 19:00:29,927 - Izvrsen oporavak logickog izraza unutar if-a u liniji 10
+INFO  19:00:29,929 - #20 goto
+INFO  19:00:29,930 - #51 skip
+INFO  19:00:29,930 - #38 ;
+INFO  19:00:29,930 - #47 }
+INFO  19:00:29,930 - #51 i
+INFO  19:00:29,931 - #35 =
+INFO  19:00:29,932 - #48 0
+INFO  19:00:29,933 - #38 ;
+INFO  19:00:29,933 - #10 do
+INFO  19:00:29,933 - #46 {
+INFO  19:00:29,933 - #9 if
+INFO  19:00:29,933 - #42 (
+INFO  19:00:29,933 - #51 x
+INFO  19:00:29,933 - #32 <=
+ERROR 19:00:29,934 - 
+Sintaksna greska na liniji 17
+INFO  19:00:29,934 - #48 0
+INFO  19:00:29,934 - #43 )
+INFO  19:00:29,934 - #4 break
+ERROR 19:00:29,934 - Izvrsen oporavak logickog izraza unutar if-a u liniji 17
+INFO  19:00:29,934 - #38 ;
+INFO  19:00:29,935 - #9 if
+INFO  19:00:29,935 - #42 (
+INFO  19:00:29,935 - #48 0
+INFO  19:00:29,935 - #32 <=
+INFO  19:00:29,935 - #51 x
+INFO  19:00:29,935 - #33 &&
+ERROR 19:00:29,935 - 
+Sintaksna greska na liniji 18
+INFO  19:00:29,936 - #51 x
+INFO  19:00:29,936 - #31 <
+INFO  19:00:29,936 - #51 size
+INFO  19:00:29,936 - #43 )
+INFO  19:00:29,936 - #46 {
+INFO  19:00:29,936 - #47 }
+INFO  19:00:29,936 - #7 else
+ERROR 19:00:29,936 - Izvrsen oporavak logickog izraza unutar if-a u liniji 18
+INFO  19:00:29,936 - #9 if
+INFO  19:00:29,936 - #42 (
+INFO  19:00:29,936 - #23 -
+INFO  19:00:29,936 - #51 size
+INFO  19:00:29,936 - #31 <
+ERROR 19:00:29,936 - 
+Sintaksna greska na liniji 22
+INFO  19:00:29,936 - #51 x
+INFO  19:00:29,936 - #33 &&
+INFO  19:00:29,937 - #51 x
+INFO  19:00:29,937 - #31 <
+INFO  19:00:29,937 - #48 0
+INFO  19:00:29,937 - #43 )
+INFO  19:00:29,937 - #38 ;
+ERROR 19:00:29,937 - Izvrsen oporavak logickog izraza unutar if-a u liniji 22
+ERROR 19:00:29,937 - 
+Sintaksna greska na liniji 22
+INFO  19:00:29,938 - #46 {
+INFO  19:00:29,938 - #47 }
+INFO  19:00:29,938 - #47 }
+ERROR 19:00:29,938 - Izvrsen oporavak konstrukcije dodele u liniji 22
+INFO  19:00:29,938 - #11 while
+INFO  19:00:29,938 - #42 (
+INFO  19:00:29,938 - #50 true
+INFO  19:00:29,939 - #43 )
+INFO  19:00:29,939 - #38 ;
+INFO  19:00:29,939 - #47 }
+INFO  19:00:29,939 - #47 }
+INFO  19:00:29,946 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                UmnatchedStatement(
+                  SingleCondTerm(
+                    SingleCondFact(
+                      ConditionFact(
+                        CondFactExpr(
+                          TermExpression(
+                            SingleFactor(
+                              ErrorFactor(
+                              ) [ErrorFactor]
+                            ) [SingleFactor]
+                          ) [TermExpression]
+                        ) [CondFactExpr]
+                        RelopGreater(
+                        ) [RelopGreater]
+                        TermExpression(
+                          SingleFactor(
+                            NumConstFactor(
+                            ) [NumConstFactor]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                      ) [ConditionFact]
+                    ) [SingleCondFact]
+                  ) [SingleCondTerm]
+                  StatementDerived1(
+                    MultipleStatements(
+                      StatementListNotEmpty(
+                        NoStatements(
+                        ) [NoStatements]
+                        SingleStatementNoLabel(
+                          GoToStmt(
+                            Label(
+                             skip
+                            ) [Label]
+                          ) [GoToStmt]
+                        ) [SingleStatementNoLabel]
+                      ) [StatementListNotEmpty]
+                    ) [MultipleStatements]
+                  ) [StatementDerived1]
+                ) [UmnatchedStatement]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     i
+                    ) [Base]
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            DoWhileStmt(
+              StatementDerived1(
+                MultipleStatements(
+                  StatementListNotEmpty(
+                    StatementListNotEmpty(
+                      StatementListNotEmpty(
+                        NoStatements(
+                        ) [NoStatements]
+                        SingleStatementNoLabel(
+                          UmnatchedStatement(
+                            SingleCondTerm(
+                              SingleCondFact(
+                                ConditionFact(
+                                  CondFactExpr(
+                                    TermExpression(
+                                      SingleFactor(
+                                        ErrorFactor(
+                                        ) [ErrorFactor]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [CondFactExpr]
+                                  RelopLTE(
+                                  ) [RelopLTE]
+                                  TermExpression(
+                                    SingleFactor(
+                                      NumConstFactor(
+                                      ) [NumConstFactor]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [ConditionFact]
+                              ) [SingleCondFact]
+                            ) [SingleCondTerm]
+                            SingleStatementNoLabel(
+                              BreakStmt(
+                              ) [BreakStmt]
+                            ) [SingleStatementNoLabel]
+                          ) [UmnatchedStatement]
+                        ) [SingleStatementNoLabel]
+                      ) [StatementListNotEmpty]
+                      SingleStatementNoLabel(
+                        MatchedStatement(
+                          SingleCondTerm(
+                            SingleCondFact(
+                              ConditionFact(
+                                CondFactExpr(
+                                  TermExpression(
+                                    SingleFactor(
+                                      NumConstFactor(
+                                      ) [NumConstFactor]
+                                    ) [SingleFactor]
+                                  ) [TermExpression]
+                                ) [CondFactExpr]
+                                RelopLTE(
+                                ) [RelopLTE]
+                                TermExpression(
+                                  SingleFactor(
+                                    ErrorFactor(
+                                    ) [ErrorFactor]
+                                  ) [SingleFactor]
+                                ) [TermExpression]
+                              ) [ConditionFact]
+                            ) [SingleCondFact]
+                          ) [SingleCondTerm]
+                          StatementDerived1(
+                            MultipleStatements(
+                              NoStatements(
+                              ) [NoStatements]
+                            ) [MultipleStatements]
+                          ) [StatementDerived1]
+                          SingleStatementNoLabel(
+                            UmnatchedStatement(
+                              SingleCondTerm(
+                                SingleCondFact(
+                                  ConditionFact(
+                                    CondFactExpr(
+                                      MinusTermExpression(
+                                        SingleFactor(
+                                          ErrorFactor(
+                                          ) [ErrorFactor]
+                                        ) [SingleFactor]
+                                      ) [MinusTermExpression]
+                                    ) [CondFactExpr]
+                                    RelopLess(
+                                    ) [RelopLess]
+                                    TermExpression(
+                                      SingleFactor(
+                                        NumConstFactor(
+                                        ) [NumConstFactor]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [ConditionFact]
+                                ) [SingleCondFact]
+                              ) [SingleCondTerm]
+                              SingleStatementNoLabel(
+                                DesignatorStmt(
+                                  ErrorDesignatorStatement(
+                                  ) [ErrorDesignatorStatement]
+                                ) [DesignatorStmt]
+                              ) [SingleStatementNoLabel]
+                            ) [UmnatchedStatement]
+                          ) [SingleStatementNoLabel]
+                        ) [MatchedStatement]
+                      ) [SingleStatementNoLabel]
+                    ) [StatementListNotEmpty]
+                    StatementDerived1(
+                      MultipleStatements(
+                        NoStatements(
+                        ) [NoStatements]
+                      ) [MultipleStatements]
+                    ) [StatementDerived1]
+                  ) [StatementListNotEmpty]
+                ) [MultipleStatements]
+              ) [StatementDerived1]
+              SingleCondTerm(
+                SingleCondFact(
+                  CondFactExpr(
+                    TermExpression(
+                      SingleFactor(
+                        BoolConstFactor(
+                        ) [BoolConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [CondFactExpr]
+                ) [SingleCondFact]
+              ) [SingleCondTerm]
+            ) [DoWhileStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:00:29,947 - ===================================
+INFO  19:00:29,952 - Obradjuje se funkcija main na liniji 7
+INFO  19:00:29,953 - Deklarisana promenljiva x na liniji 7
+INFO  19:00:29,953 - Deklarisana promenljiva i na liniji 7
+INFO  19:00:29,953 - Deklarisana promenljiva c na liniji 7
+INFO  19:00:29,953 - Pristupa se promenljivoj i na liniji 14
+INFO  19:00:29,953 -  Deklarisanih promenljivih ima = 2
+INFO  19:00:29,955 - ===================================

@@ -1,0 +1,345 @@
+INFO  21:13:18,511 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:13:18,566 - #2 program
+INFO  21:13:18,567 - #51 p
+INFO  21:13:18,567 - #8 const
+INFO  21:13:18,568 - #51 int
+INFO  21:13:18,568 - #51 size
+INFO  21:13:18,568 - #35 =
+INFO  21:13:18,568 - #48 10
+INFO  21:13:18,569 - #38 ;
+INFO  21:13:18,570 - #46 {
+INFO  21:13:18,570 - #51 dfsdgf
+INFO  21:13:18,571 - #51 p
+INFO  21:13:18,571 - #42 (
+INFO  21:13:18,571 - #43 )
+INFO  21:13:18,572 - #46 {
+INFO  21:13:18,573 - #47 }
+INFO  21:13:18,574 - #3 void
+INFO  21:13:18,574 - #51 p
+INFO  21:13:18,575 - #42 (
+INFO  21:13:18,575 - #43 )
+INFO  21:13:18,575 - #46 {
+INFO  21:13:18,575 - #47 }
+INFO  21:13:18,575 - #51 int
+INFO  21:13:18,583 - #51 k
+INFO  21:13:18,583 - #42 (
+INFO  21:13:18,583 - #51 nesto
+INFO  21:13:18,583 - #43 )
+ERROR 21:13:18,583 - 
+Sintaksna greska na liniji 11
+INFO  21:13:18,583 - #46 {
+INFO  21:13:18,583 - #15 return
+INFO  21:13:18,583 - #48 2
+ERROR 21:13:18,584 - Izvrsen oporavak parametara funkcije u liniji 11
+INFO  21:13:18,584 - #38 ;
+INFO  21:13:18,585 - #47 }
+INFO  21:13:18,585 - #3 void
+INFO  21:13:18,586 - #51 f
+INFO  21:13:18,586 - #42 (
+INFO  21:13:18,586 - #51 char
+INFO  21:13:18,586 - #51 ch
+INFO  21:13:18,586 - #40 ,
+INFO  21:13:18,587 - #51 int
+INFO  21:13:18,587 - #51 a
+INFO  21:13:18,587 - #40 ,
+INFO  21:13:18,587 - #51 int
+INFO  21:13:18,587 - #51 arg
+INFO  21:13:18,587 - #43 )
+INFO  21:13:18,587 - #51 int
+INFO  21:13:18,588 - #51 x
+INFO  21:13:18,588 - #38 ;
+INFO  21:13:18,588 - #46 {
+INFO  21:13:18,588 - #51 x
+INFO  21:13:18,588 - #35 =
+INFO  21:13:18,589 - #51 arg
+INFO  21:13:18,590 - #38 ;
+INFO  21:13:18,591 - #47 }
+INFO  21:13:18,591 - #3 void
+INFO  21:13:18,591 - #51 main
+INFO  21:13:18,591 - #42 (
+INFO  21:13:18,591 - #43 )
+INFO  21:13:18,591 - #51 int
+INFO  21:13:18,591 - #51 x
+INFO  21:13:18,591 - #40 ,
+INFO  21:13:18,591 - #51 i
+INFO  21:13:18,592 - #38 ;
+INFO  21:13:18,592 - #51 char
+INFO  21:13:18,592 - #51 c
+INFO  21:13:18,592 - #38 ;
+INFO  21:13:18,592 - #46 {
+INFO  21:13:18,592 - #47 }
+INFO  21:13:18,592 - #51 int
+INFO  21:13:18,592 - #51 l
+INFO  21:13:18,593 - #42 (
+INFO  21:13:18,593 - #43 )
+INFO  21:13:18,593 - #46 {
+INFO  21:13:18,593 - #47 }
+INFO  21:13:18,593 - #47 }
+INFO  21:13:18,598 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        MethodDeclarations(
+          MethodDeclarations(
+            MethodDeclarations(
+              NoMethodDecls(
+              ) [NoMethodDecls]
+              MethodDeclaration(
+                MethodDeclType(
+                  Type(
+                   dfsdgf
+                  ) [Type]
+                 p
+                ) [MethodDeclType]
+                NoFormParams(
+                ) [NoFormParams]
+                NoVarDecls(
+                ) [NoVarDecls]
+                MultipleStatements(
+                  NoStatements(
+                  ) [NoStatements]
+                ) [MultipleStatements]
+              ) [MethodDeclaration]
+            ) [MethodDeclarations]
+            MethodDeclaration(
+              MethodVoidType(
+               p
+              ) [MethodVoidType]
+              NoFormParams(
+              ) [NoFormParams]
+              NoVarDecls(
+              ) [NoVarDecls]
+              MultipleStatements(
+                NoStatements(
+                ) [NoStatements]
+              ) [MultipleStatements]
+            ) [MethodDeclaration]
+          ) [MethodDeclarations]
+          MethodDeclaration(
+            MethodDeclType(
+              Type(
+               int
+              ) [Type]
+             k
+            ) [MethodDeclType]
+            FormParamLs(
+              SingleFormParam(
+                ErrorFormParameter(
+                ) [ErrorFormParameter]
+              ) [SingleFormParam]
+            ) [FormParamLs]
+            NoVarDecls(
+            ) [NoVarDecls]
+            MultipleStatements(
+              StatementListNotEmpty(
+                NoStatements(
+                ) [NoStatements]
+                SingleStatementNoLabel(
+                  ReturnExprStmt(
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [ReturnExprStmt]
+                ) [SingleStatementNoLabel]
+              ) [StatementListNotEmpty]
+            ) [MultipleStatements]
+          ) [MethodDeclaration]
+        ) [MethodDeclarations]
+        MethodDeclaration(
+          MethodVoidType(
+           f
+          ) [MethodVoidType]
+          FormParamLs(
+            FormParams(
+              FormParams(
+                SingleFormParam(
+                  FormParameter(
+                    Type(
+                     char
+                    ) [Type]
+                   ch
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [FormParameter]
+                ) [SingleFormParam]
+                FormParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [FormParameter]
+              ) [FormParams]
+              FormParameter(
+                Type(
+                 int
+                ) [Type]
+               arg
+                NoBrackets(
+                ) [NoBrackets]
+              ) [FormParameter]
+            ) [FormParams]
+          ) [FormParamLs]
+          VarDeclarations(
+            NoVarDecls(
+            ) [NoVarDecls]
+            VariableDeclaration(
+              Type(
+               int
+              ) [Type]
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+            ) [VariableDeclaration]
+          ) [VarDeclarations]
+          MultipleStatements(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                DesignatorStmt(
+                  DesignatorStatmentNoError(
+                    Designator(
+                      Base(
+                       x
+                      ) [Base]
+                      NoDesignatorAdded(
+                      ) [NoDesignatorAdded]
+                    ) [Designator]
+                    DesignatorAssign(
+                      Assignop(
+                      ) [Assignop]
+                      TermExpression(
+                        SingleFactor(
+                          FunctionCall(
+                            Designator(
+                              Base(
+                               arg
+                              ) [Base]
+                              NoDesignatorAdded(
+                              ) [NoDesignatorAdded]
+                            ) [Designator]
+                            NoFactorActPars(
+                            ) [NoFactorActPars]
+                          ) [FunctionCall]
+                        ) [SingleFactor]
+                      ) [TermExpression]
+                    ) [DesignatorAssign]
+                  ) [DesignatorStatmentNoError]
+                ) [DesignatorStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+          ) [MultipleStatements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        MethodVoidType(
+         main
+        ) [MethodVoidType]
+        NoFormParams(
+        ) [NoFormParams]
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecls(
+            ) [NoVarDecls]
+            VariableDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationList(
+                SingleVar(
+                  SingleVarDeclaration(
+                   x
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [SingleVarDeclaration]
+                ) [SingleVar]
+                SingleVarDeclaration(
+                 i
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [VarDeclarationList]
+            ) [VariableDeclaration]
+          ) [VarDeclarations]
+          VariableDeclaration(
+            Type(
+             char
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               c
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        MultipleStatements(
+          NoStatements(
+          ) [NoStatements]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodDeclType(
+        Type(
+         int
+        ) [Type]
+       l
+      ) [MethodDeclType]
+      NoFormParams(
+      ) [NoFormParams]
+      NoVarDecls(
+      ) [NoVarDecls]
+      MultipleStatements(
+        NoStatements(
+        ) [NoStatements]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:13:18,598 - ===================================
+ERROR 21:13:18,600 - Nije pronadjen tipdfsdgf u tabeli simbola!
+INFO  21:13:18,600 - Obradjuje se funkcija p na liniji 5
+INFO  21:13:18,601 - Obradjuje se funkcija p na liniji 8
+INFO  21:13:18,601 - Obradjuje se funkcija k na liniji 11
+INFO  21:13:18,601 - Obradjuje se funkcija f na liniji 15
+INFO  21:13:18,601 - Deklarisana promenljiva x na liniji 16
+ERROR 21:13:18,601 - Greska na liniji 18 :ime arg nije deklarisano!
+INFO  21:13:18,602 - Obradjuje se funkcija main na liniji 20
+INFO  21:13:18,602 - Deklarisana promenljiva x na liniji 20
+INFO  21:13:18,602 - Deklarisana promenljiva i na liniji 20
+INFO  21:13:18,602 - Deklarisana promenljiva c na liniji 20
+INFO  21:13:18,602 - Obradjuje se funkcija l na liniji 23
+INFO  21:13:18,602 -  Deklarisanih promenljivih ima = 3
+INFO  21:13:18,602 - ===================================

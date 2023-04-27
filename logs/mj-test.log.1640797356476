@@ -1,0 +1,152 @@
+INFO  18:01:25,943 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:01:26,005 - #2 program
+INFO  18:01:26,005 - #48 p
+INFO  18:01:26,006 - #8 const
+INFO  18:01:26,007 - #48 int
+INFO  18:01:26,008 - #48 size
+INFO  18:01:26,008 - #35 =
+INFO  18:01:26,009 - #50 10
+INFO  18:01:26,009 - #38 ;
+INFO  18:01:26,009 - #46 {
+INFO  18:01:26,010 - #3 void
+INFO  18:01:26,011 - #48 main
+INFO  18:01:26,011 - #42 (
+INFO  18:01:26,011 - #43 )
+INFO  18:01:26,012 - #48 int
+INFO  18:01:26,013 - #48 x
+INFO  18:01:26,013 - #40 ,
+INFO  18:01:26,014 - #48 i
+INFO  18:01:26,014 - #38 ;
+INFO  18:01:26,015 - #48 char
+INFO  18:01:26,015 - #48 c
+INFO  18:01:26,015 - #38 ;
+INFO  18:01:26,015 - #46 {
+INFO  18:01:26,015 - #13 print
+INFO  18:01:26,016 - #42 (
+INFO  18:01:26,017 - #50 1
+INFO  18:01:26,017 - #43 )
+INFO  18:01:26,017 - #38 ;
+INFO  18:01:26,017 - #13 print
+INFO  18:01:26,018 - #42 (
+INFO  18:01:26,018 - #50 5
+INFO  18:01:26,018 - #43 )
+INFO  18:01:26,018 - #38 ;
+INFO  18:01:26,018 - #47 }
+INFO  18:01:26,018 - #47 }
+INFO  18:01:26,023 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+             10
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              PrintStmt(
+                TermExpression(
+                  SingleFactor(
+                    NumConstFactor(
+                     1
+                    ) [NumConstFactor]
+                  ) [SingleFactor]
+                ) [TermExpression]
+                NoNumConstPrint(
+                ) [NoNumConstPrint]
+              ) [PrintStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            PrintStmt(
+              TermExpression(
+                SingleFactor(
+                  NumConstFactor(
+                   5
+                  ) [NumConstFactor]
+                ) [SingleFactor]
+              ) [TermExpression]
+              NoNumConstPrint(
+              ) [NoNumConstPrint]
+            ) [PrintStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:01:26,024 - ===================================
+INFO  18:01:26,027 - Deklarisana konstanta size na liniji 2
+INFO  18:01:26,027 - Obradjuje se funkcija main na liniji 4
+INFO  18:01:26,027 - Deklarisana promenljiva x na liniji 4
+INFO  18:01:26,028 - Deklarisana promenljiva i na liniji 4
+INFO  18:01:26,028 - Deklarisana promenljiva c na liniji 4
+INFO  18:01:26,028 -  Deklarisanih promenljivih ima = 2
+INFO  18:01:26,028 - ===================================
+INFO  18:01:26,033 - Parsiranje uspesno zavrseno!

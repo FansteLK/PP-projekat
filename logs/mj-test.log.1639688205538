@@ -1,0 +1,91 @@
+INFO  21:55:05,121 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:55:05,176 - #2 program
+INFO  21:55:05,176 - #51 MJProgram
+INFO  21:55:05,176 - #51 int
+INFO  21:55:05,177 - #51 x
+INFO  21:55:05,177 - #38 ;
+INFO  21:55:05,178 - #46 {
+INFO  21:55:05,179 - #51 int
+INFO  21:55:05,180 - #51 main
+INFO  21:55:05,180 - #42 (
+INFO  21:55:05,180 - #43 )
+INFO  21:55:05,181 - #46 {
+INFO  21:55:05,181 - #51 thissfksoedgjsd
+INFO  21:55:05,182 - #41 .
+INFO  21:55:05,182 - #51 x
+INFO  21:55:05,182 - #35 =
+INFO  21:55:05,182 - #48 10
+INFO  21:55:05,183 - #38 ;
+INFO  21:55:05,184 - #47 }
+INFO  21:55:05,184 - #47 }
+INFO  21:55:05,185 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclWithFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoFormParams(
+      ) [NoFormParams]
+      NoVarDecls(
+      ) [NoVarDecls]
+      MultipleStatements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              AssignmentStmt(
+                DesignatorStatementDerived1(
+                  DesignatorAdded(
+                    DesignatorDerived1(
+                     thissfksoedgjsd
+                    ) [DesignatorDerived1]
+                    DesignatorAddDerived1(
+                     x
+                    ) [DesignatorAddDerived1]
+                  ) [DesignatorAdded]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    ExprDerived2(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [ExprDerived2]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatementDerived1]
+              ) [AssignmentStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclWithFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:55:05,186 - ===================================
+INFO  21:55:05,188 -  Deklarisanih promenljivih ima = 1

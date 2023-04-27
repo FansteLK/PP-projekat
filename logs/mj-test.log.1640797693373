@@ -1,0 +1,195 @@
+INFO  18:04:13,778 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:04:13,846 - #2 program
+INFO  18:04:13,846 - #48 p
+INFO  18:04:13,846 - #8 const
+INFO  18:04:13,848 - #48 int
+INFO  18:04:13,848 - #48 size
+INFO  18:04:13,849 - #35 =
+INFO  18:04:13,849 - #50 10
+INFO  18:04:13,849 - #38 ;
+INFO  18:04:13,850 - #46 {
+INFO  18:04:13,851 - #48 int
+INFO  18:04:13,852 - #48 nesto
+INFO  18:04:13,852 - #42 (
+INFO  18:04:13,852 - #43 )
+INFO  18:04:13,853 - #46 {
+INFO  18:04:13,853 - #15 return
+INFO  18:04:13,854 - #50 2
+INFO  18:04:13,855 - #38 ;
+INFO  18:04:13,855 - #47 }
+INFO  18:04:13,855 - #3 void
+INFO  18:04:13,856 - #48 main
+INFO  18:04:13,856 - #42 (
+INFO  18:04:13,856 - #43 )
+INFO  18:04:13,860 - #48 int
+INFO  18:04:13,860 - #48 x
+INFO  18:04:13,860 - #40 ,
+INFO  18:04:13,862 - #48 i
+INFO  18:04:13,862 - #38 ;
+INFO  18:04:13,862 - #48 char
+INFO  18:04:13,863 - #48 c
+INFO  18:04:13,863 - #38 ;
+INFO  18:04:13,863 - #46 {
+INFO  18:04:13,863 - #13 print
+INFO  18:04:13,863 - #42 (
+INFO  18:04:13,863 - #50 1
+INFO  18:04:13,864 - #43 )
+INFO  18:04:13,864 - #38 ;
+INFO  18:04:13,865 - #13 print
+INFO  18:04:13,865 - #42 (
+INFO  18:04:13,865 - #50 5
+INFO  18:04:13,865 - #43 )
+INFO  18:04:13,865 - #38 ;
+INFO  18:04:13,865 - #47 }
+INFO  18:04:13,865 - #47 }
+INFO  18:04:13,870 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+             10
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecls(
+      ) [NoMethodDecls]
+      MethodDeclaration(
+        MethodDeclType(
+          Type(
+           int
+          ) [Type]
+         nesto
+        ) [MethodDeclType]
+        NoFormParams(
+        ) [NoFormParams]
+        NoVarDecls(
+        ) [NoVarDecls]
+        MultipleStatements(
+          NotSuperStmt(
+          ) [NotSuperStmt]
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              ReturnExprStmt(
+                TermExpression(
+                  SingleFactor(
+                    NumConstFactor(
+                     2
+                    ) [NumConstFactor]
+                  ) [SingleFactor]
+                ) [TermExpression]
+              ) [ReturnExprStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              PrintStmt(
+                TermExpression(
+                  SingleFactor(
+                    NumConstFactor(
+                     1
+                    ) [NumConstFactor]
+                  ) [SingleFactor]
+                ) [TermExpression]
+                NoNumConstPrint(
+                ) [NoNumConstPrint]
+              ) [PrintStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            PrintStmt(
+              TermExpression(
+                SingleFactor(
+                  NumConstFactor(
+                   5
+                  ) [NumConstFactor]
+                ) [SingleFactor]
+              ) [TermExpression]
+              NoNumConstPrint(
+              ) [NoNumConstPrint]
+            ) [PrintStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:04:13,871 - ===================================
+INFO  18:04:13,875 - Deklarisana konstanta size na liniji 2
+INFO  18:04:13,875 - Obradjuje se funkcija nesto na liniji 4
+INFO  18:04:13,876 - Obradjuje se funkcija main na liniji 9
+INFO  18:04:13,876 - Deklarisana promenljiva x na liniji 9
+INFO  18:04:13,876 - Deklarisana promenljiva i na liniji 9
+INFO  18:04:13,876 - Deklarisana promenljiva c na liniji 9
+INFO  18:04:13,876 -  Deklarisanih promenljivih ima = 2
+INFO  18:04:13,876 - ===================================
+INFO  18:04:13,882 - Parsiranje uspesno zavrseno!

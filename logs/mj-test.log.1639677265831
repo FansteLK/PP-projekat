@@ -1,0 +1,75 @@
+INFO  18:53:41,793 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:53:41,898 - #2 program
+INFO  18:53:41,899 - #51 MJProgram
+INFO  18:53:41,899 - #51 int
+INFO  18:53:41,900 - #51 x
+INFO  18:53:41,901 - #38 ;
+INFO  18:53:41,903 - #46 {
+INFO  18:53:41,904 - #51 int
+INFO  18:53:41,906 - #51 main
+INFO  18:53:41,906 - #42 (
+INFO  18:53:41,906 - #43 )
+INFO  18:53:41,906 - #46 {
+INFO  18:53:41,907 - #14 return
+INFO  18:53:41,909 - #51 cdgdd
+INFO  18:53:41,909 - #38 ;
+INFO  18:53:41,910 - #47 }
+INFO  18:53:41,910 - #47 }
+INFO  18:53:41,914 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              ReturnExprStmt(
+                ExprDerived2(
+                  SingleFactor(
+                    FactorDerived1(
+                      DesignatorDerived1(
+                       cdgdd
+                      ) [DesignatorDerived1]
+                    ) [FactorDerived1]
+                  ) [SingleFactor]
+                ) [ExprDerived2]
+              ) [ReturnExprStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:53:41,915 - ===================================
+INFO  18:53:41,918 -  Deklarisanih promenljivih ima = 1

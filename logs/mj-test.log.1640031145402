@@ -1,0 +1,272 @@
+INFO  21:11:51,747 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:11:51,807 - #2 program
+INFO  21:11:51,807 - #51 p
+INFO  21:11:51,807 - #8 const
+INFO  21:11:51,809 - #51 int
+INFO  21:11:51,809 - #51 size
+INFO  21:11:51,809 - #35 =
+INFO  21:11:51,809 - #48 10
+INFO  21:11:51,809 - #38 ;
+INFO  21:11:51,810 - #46 {
+INFO  21:11:51,811 - #51 int
+INFO  21:11:51,812 - #51 k
+INFO  21:11:51,813 - #42 (
+INFO  21:11:51,813 - #51 nesto
+INFO  21:11:51,813 - #43 )
+ERROR 21:11:51,813 - 
+Sintaksna greska na liniji 5
+INFO  21:11:51,813 - #46 {
+INFO  21:11:51,813 - #15 return
+INFO  21:11:51,813 - #48 2
+ERROR 21:11:51,814 - Izvrsen oporavak parametara funkcije u liniji 5
+INFO  21:11:51,823 - #38 ;
+INFO  21:11:51,824 - #47 }
+INFO  21:11:51,824 - #3 void
+INFO  21:11:51,825 - #51 f
+INFO  21:11:51,825 - #42 (
+INFO  21:11:51,825 - #51 char
+INFO  21:11:51,825 - #51 ch
+INFO  21:11:51,825 - #40 ,
+INFO  21:11:51,826 - #51 int
+INFO  21:11:51,827 - #51 a
+INFO  21:11:51,827 - #40 ,
+INFO  21:11:51,827 - #51 int
+INFO  21:11:51,827 - #51 arg
+INFO  21:11:51,827 - #43 )
+INFO  21:11:51,827 - #51 int
+INFO  21:11:51,827 - #51 x
+INFO  21:11:51,827 - #38 ;
+INFO  21:11:51,827 - #46 {
+INFO  21:11:51,828 - #51 x
+INFO  21:11:51,828 - #35 =
+INFO  21:11:51,829 - #51 arg
+INFO  21:11:51,830 - #38 ;
+INFO  21:11:51,831 - #47 }
+INFO  21:11:51,831 - #3 void
+INFO  21:11:51,831 - #51 main
+INFO  21:11:51,831 - #42 (
+INFO  21:11:51,831 - #43 )
+INFO  21:11:51,832 - #51 int
+INFO  21:11:51,832 - #51 x
+INFO  21:11:51,832 - #40 ,
+INFO  21:11:51,832 - #51 i
+INFO  21:11:51,832 - #38 ;
+INFO  21:11:51,832 - #51 char
+INFO  21:11:51,832 - #51 c
+INFO  21:11:51,832 - #38 ;
+INFO  21:11:51,832 - #46 {
+INFO  21:11:51,833 - #47 }
+INFO  21:11:51,833 - #47 }
+INFO  21:11:51,837 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecls(
+        ) [NoMethodDecls]
+        MethodDeclaration(
+          MethodDeclType(
+            Type(
+             int
+            ) [Type]
+           k
+          ) [MethodDeclType]
+          FormParamLs(
+            SingleFormParam(
+              ErrorFormParameter(
+              ) [ErrorFormParameter]
+            ) [SingleFormParam]
+          ) [FormParamLs]
+          NoVarDecls(
+          ) [NoVarDecls]
+          MultipleStatements(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                ReturnExprStmt(
+                  TermExpression(
+                    SingleFactor(
+                      NumConstFactor(
+                      ) [NumConstFactor]
+                    ) [SingleFactor]
+                  ) [TermExpression]
+                ) [ReturnExprStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+          ) [MultipleStatements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        MethodVoidType(
+         f
+        ) [MethodVoidType]
+        FormParamLs(
+          FormParams(
+            FormParams(
+              SingleFormParam(
+                FormParameter(
+                  Type(
+                   char
+                  ) [Type]
+                 ch
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [FormParameter]
+              ) [SingleFormParam]
+              FormParameter(
+                Type(
+                 int
+                ) [Type]
+               a
+                NoBrackets(
+                ) [NoBrackets]
+              ) [FormParameter]
+            ) [FormParams]
+            FormParameter(
+              Type(
+               int
+              ) [Type]
+             arg
+              NoBrackets(
+              ) [NoBrackets]
+            ) [FormParameter]
+          ) [FormParams]
+        ) [FormParamLs]
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        MultipleStatements(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     x
+                    ) [Base]
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    TermExpression(
+                      SingleFactor(
+                        FunctionCall(
+                          Designator(
+                            Base(
+                             arg
+                            ) [Base]
+                            NoDesignatorAdded(
+                            ) [NoDesignatorAdded]
+                          ) [Designator]
+                          NoFactorActPars(
+                          ) [NoFactorActPars]
+                        ) [FunctionCall]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        NoStatements(
+        ) [NoStatements]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:11:51,838 - ===================================
+INFO  21:11:51,841 - Obradjuje se funkcija k na liniji 5
+INFO  21:11:51,841 - Obradjuje se funkcija f na liniji 9
+INFO  21:11:51,842 - Deklarisana promenljiva x na liniji 10
+ERROR 21:11:51,842 - Greska na liniji 12 :ime arg nije deklarisano!
+INFO  21:11:51,842 - Obradjuje se funkcija main na liniji 14
+INFO  21:11:51,842 - Deklarisana promenljiva x na liniji 14
+INFO  21:11:51,842 - Deklarisana promenljiva i na liniji 14
+INFO  21:11:51,842 - Deklarisana promenljiva c na liniji 14
+INFO  21:11:51,842 -  Deklarisanih promenljivih ima = 3
+INFO  21:11:51,842 - ===================================

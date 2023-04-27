@@ -1,0 +1,220 @@
+INFO  13:37:12,871 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  13:37:12,924 - #2 program
+INFO  13:37:12,924 - #48 test302
+INFO  13:37:12,924 - #8 const
+INFO  13:37:12,925 - #48 int
+INFO  13:37:12,925 - #48 jedan
+INFO  13:37:12,926 - #35 =
+INFO  13:37:12,927 - #50 1
+INFO  13:37:12,927 - #38 ;
+INFO  13:37:12,927 - #48 int
+INFO  13:37:12,928 - #38 ;
+ERROR 13:37:12,928 - 
+Sintaksna greska na liniji 7
+INFO  13:37:12,928 - #48 bool
+INFO  13:37:12,928 - #48 ibool
+INFO  13:37:12,928 - #38 ;
+ERROR 13:37:12,929 - Izvrsen oporavak globalne promenljive u liniji 7
+INFO  13:37:12,931 - #48 int
+INFO  13:37:12,931 - #48 niz2
+INFO  13:37:12,931 - #38 ;
+INFO  13:37:12,932 - #5 class
+INFO  13:37:12,939 - #48 Test
+INFO  13:37:12,939 - #46 {
+INFO  13:37:12,940 - #48 int
+INFO  13:37:12,940 - #48 niz
+INFO  13:37:12,940 - #44 [
+INFO  13:37:12,940 - #45 ]
+INFO  13:37:12,940 - #38 ;
+INFO  13:37:12,941 - #48 int
+INFO  13:37:12,941 - #48 a
+INFO  13:37:12,941 - #38 ;
+INFO  13:37:12,941 - #46 {
+INFO  13:37:12,941 - #47 }
+INFO  13:37:12,942 - #47 }
+INFO  13:37:12,942 - #48 Test
+INFO  13:37:12,942 - #48 t1
+INFO  13:37:12,942 - #40 ,
+INFO  13:37:12,943 - #48 t2
+INFO  13:37:12,943 - #38 ;
+INFO  13:37:12,943 - #46 {
+INFO  13:37:12,943 - #3 void
+INFO  13:37:12,943 - #48 main
+INFO  13:37:12,944 - #42 (
+INFO  13:37:12,944 - #43 )
+INFO  13:37:12,945 - #46 {
+INFO  13:37:12,945 - #47 }
+INFO  13:37:12,946 - #47 }
+INFO  13:37:12,954 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              ConstDeclaration(
+                ConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDeclListDerived1(
+                    SingleConstDeclaration(
+                      ConstName(
+                       jedan
+                      ) [ConstName]
+                      NumConst(
+                       1
+                      ) [NumConst]
+                    ) [SingleConstDeclaration]
+                  ) [ConstDeclListDerived1]
+                ) [ConstDecl]
+              ) [ConstDeclaration]
+            ) [Declarations]
+            VarDeclaration(
+              VariableDeclaration(
+                Type(
+                 int
+                ) [Type]
+                SingleVar(
+                  ErrorDecl(
+                  ) [ErrorDecl]
+                ) [SingleVar]
+              ) [VariableDeclaration]
+            ) [VarDeclaration]
+          ) [Declarations]
+          VarDeclaration(
+            VariableDeclaration(
+              Type(
+               bool
+              ) [Type]
+              SingleVar(
+                SingleVarDeclaration(
+                 ibool
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+            ) [VariableDeclaration]
+          ) [VarDeclaration]
+        ) [Declarations]
+        VarDeclaration(
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               niz2
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclaration]
+      ) [Declarations]
+      ClassDeclaration(
+        ClassDecl1(
+          ClassName(
+            Type(
+             Test
+            ) [Type]
+          ) [ClassName]
+          DoesntExtendsClass(
+          ) [DoesntExtendsClass]
+          CLassVarDeclarations2(
+            ClassVarDeclarations(
+              SingleClassDecl(
+                ClassVarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleClassVar(
+                    SingleClassVarDeclaration(
+                     niz
+                      WithBrackets(
+                      ) [WithBrackets]
+                    ) [SingleClassVarDeclaration]
+                  ) [SingleClassVar]
+                ) [ClassVarDeclaration]
+              ) [SingleClassDecl]
+              ClassVarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                SingleClassVar(
+                  SingleClassVarDeclaration(
+                   a
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [SingleClassVarDeclaration]
+                ) [SingleClassVar]
+              ) [ClassVarDeclaration]
+            ) [ClassVarDeclarations]
+          ) [CLassVarDeclarations2]
+          EmptyClassBody2(
+          ) [EmptyClassBody2]
+        ) [ClassDecl1]
+      ) [ClassDeclaration]
+    ) [Declarations]
+    VarDeclaration(
+      VariableDeclaration(
+        Type(
+         Test
+        ) [Type]
+        VarDeclarationList(
+          SingleVar(
+            SingleVarDeclaration(
+             t1
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+          SingleVarDeclaration(
+           t2
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [VarDeclarationList]
+      ) [VariableDeclaration]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      NoVarDecls(
+      ) [NoVarDecls]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        NoStatements(
+        ) [NoStatements]
+        RbraceStatements(
+        ) [RbraceStatements]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  13:37:12,954 - ===================================
+INFO  13:37:12,958 - Deklarisana konstanta jedan na liniji 5
+INFO  13:37:12,958 - Deklarisana promenljiva ibool na liniji 8
+INFO  13:37:12,959 - Deklarisana promenljiva niz2 na liniji 10
+INFO  13:37:12,959 - Deklarisana  klasa Test na liniji 12
+INFO  13:37:12,959 - Deklarisano nizovsko polje niz na liniji 13
+INFO  13:37:12,959 - Deklarisana poljea na liniji 14
+INFO  13:37:12,959 - Deklarisana poljea na liniji 14
+INFO  13:37:12,959 - Deklarisana promenljiva t1 na liniji 19
+INFO  13:37:12,959 - Deklarisana promenljiva t2 na liniji 19
+INFO  13:37:12,959 - Obradjuje se funkcija main na liniji 25
+INFO  13:37:12,959 - ===================================
+ERROR 13:37:12,960 - Parsiranje NIJE uspesno zavrseno

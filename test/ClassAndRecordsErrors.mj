@@ -1,0 +1,41 @@
+program p
+
+record Board {
+int rows, columns;
+}
+
+class Table extends Board {
+int pos[], neg[];
+int i;
+
+{
+ Table()
+ {
+  //super();
+ }
+ void putp (int a, int idx) { }
+ 
+
+ int getp (int idx) { return pos[idx]; }
+ int getn (int idx) { return neg[idx]; }
+}
+}
+class Table  {
+
+int i;
+
+{
+
+}
+}
+
+Table val;
+Board board;
+int i;
+{
+void main()
+{
+val=new Table;
+
+}
+}

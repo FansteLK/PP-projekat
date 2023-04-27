@@ -1,0 +1,109 @@
+INFO  19:17:04,217 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  19:17:04,299 - #2 program
+INFO  19:17:04,299 - #51 MJProgram
+INFO  19:17:04,300 - #51 int
+INFO  19:17:04,300 - #51 x
+INFO  19:17:04,301 - #38 ;
+INFO  19:17:04,303 - #46 {
+INFO  19:17:04,304 - #51 int
+INFO  19:17:04,305 - #51 main
+INFO  19:17:04,305 - #42 (
+INFO  19:17:04,305 - #43 )
+INFO  19:17:04,305 - #46 {
+INFO  19:17:04,306 - #12 print
+INFO  19:17:04,307 - #42 (
+INFO  19:17:04,307 - #51 nesto
+INFO  19:17:04,308 - #43 )
+INFO  19:17:04,310 - #38 ;
+INFO  19:17:04,310 - #51 x
+INFO  19:17:04,311 - #41 .
+INFO  19:17:04,311 - #51 y
+INFO  19:17:04,311 - #35 =
+INFO  19:17:04,312 - #48 10
+INFO  19:17:04,313 - #38 ;
+INFO  19:17:04,314 - #47 }
+INFO  19:17:04,314 - #47 }
+INFO  19:17:04,317 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              MatchedStmt(
+                PrintStmt(
+                  ExprDerived2(
+                    SingleFactor(
+                      FactorDerived1(
+                        DesignatorDerived1(
+                         nesto
+                        ) [DesignatorDerived1]
+                      ) [FactorDerived1]
+                    ) [SingleFactor]
+                  ) [ExprDerived2]
+                  NoNumConstPrint(
+                  ) [NoNumConstPrint]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              AssignmentStmt(
+                DesignatorStatementDerived1(
+                  DesignatorWithExpression(
+                    DesignatorDerived1(
+                     x
+                    ) [DesignatorDerived1]
+                   y
+                  ) [DesignatorWithExpression]
+                  Assignop(
+                  ) [Assignop]
+                  ExprDerived2(
+                    SingleFactor(
+                      NumConstFactor(
+                      ) [NumConstFactor]
+                    ) [SingleFactor]
+                  ) [ExprDerived2]
+                ) [DesignatorStatementDerived1]
+              ) [AssignmentStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:17:04,317 - ===================================
+INFO  19:17:04,321 -  Deklarisanih promenljivih ima = 1

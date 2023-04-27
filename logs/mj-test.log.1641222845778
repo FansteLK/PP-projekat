@@ -1,0 +1,513 @@
+INFO  16:08:37,501 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  16:08:37,562 - #2 program
+INFO  16:08:37,563 - #48 p
+INFO  16:08:37,563 - #48 int
+INFO  16:08:37,564 - #48 x
+INFO  16:08:37,564 - #38 ;
+INFO  16:08:37,565 - #48 int
+INFO  16:08:37,566 - #48 y
+INFO  16:08:37,566 - #38 ;
+INFO  16:08:37,566 - #5 class
+INFO  16:08:37,566 - #48 Klasa
+INFO  16:08:37,566 - #46 {
+INFO  16:08:37,568 - #48 int
+ERROR 16:08:37,568 - 
+Sintaksna greska na liniji 5
+INFO  16:08:37,568 - #48 b
+INFO  16:08:37,568 - #40 ,
+INFO  16:08:37,568 - #48 a
+INFO  16:08:37,569 - #38 ;
+INFO  16:08:37,569 - #46 {
+INFO  16:08:37,569 - #47 }
+INFO  16:08:37,569 - #47 }
+INFO  16:08:37,569 - #46 {
+ERROR 16:08:37,577 - Izvrsen oporavak klasne promenljive do { u liniji 4
+INFO  16:08:37,578 - #48 int
+INFO  16:08:37,579 - #48 nesto
+INFO  16:08:37,579 - #42 (
+INFO  16:08:37,579 - #43 )
+INFO  16:08:37,580 - #46 {
+INFO  16:08:37,580 - #13 print
+INFO  16:08:37,581 - #42 (
+INFO  16:08:37,582 - #51 c
+INFO  16:08:37,582 - #43 )
+INFO  16:08:37,582 - #38 ;
+INFO  16:08:37,582 - #13 print
+INFO  16:08:37,583 - #42 (
+INFO  16:08:37,583 - #50 5
+INFO  16:08:37,583 - #43 )
+INFO  16:08:37,583 - #38 ;
+INFO  16:08:37,583 - #15 return
+INFO  16:08:37,583 - #50 2
+INFO  16:08:37,583 - #38 ;
+INFO  16:08:37,583 - #47 }
+INFO  16:08:37,583 - #3 void
+INFO  16:08:37,584 - #48 kita
+INFO  16:08:37,584 - #42 (
+INFO  16:08:37,584 - #43 )
+INFO  16:08:37,584 - #46 {
+INFO  16:08:37,584 - #47 }
+INFO  16:08:37,584 - #3 void
+INFO  16:08:37,584 - #48 main
+INFO  16:08:37,584 - #42 (
+INFO  16:08:37,584 - #43 )
+INFO  16:08:37,584 - #48 int
+INFO  16:08:37,584 - #48 x
+INFO  16:08:37,584 - #44 [
+INFO  16:08:37,585 - #45 ]
+INFO  16:08:37,585 - #40 ,
+INFO  16:08:37,585 - #48 i
+INFO  16:08:37,585 - #38 ;
+INFO  16:08:37,585 - #48 char
+INFO  16:08:37,586 - #48 c
+INFO  16:08:37,586 - #38 ;
+INFO  16:08:37,586 - #48 Klasa
+INFO  16:08:37,586 - #48 neka
+INFO  16:08:37,586 - #38 ;
+INFO  16:08:37,586 - #46 {
+INFO  16:08:37,586 - #48 i
+INFO  16:08:37,586 - #35 =
+INFO  16:08:37,587 - #23 -
+INFO  16:08:37,588 - #50 5
+INFO  16:08:37,588 - #22 +
+INFO  16:08:37,588 - #50 5
+INFO  16:08:37,589 - #38 ;
+INFO  16:08:37,589 - #48 neka
+INFO  16:08:37,589 - #35 =
+INFO  16:08:37,589 - #12 new
+INFO  16:08:37,589 - #48 Klasa
+INFO  16:08:37,589 - #38 ;
+INFO  16:08:37,590 - #48 neka
+INFO  16:08:37,590 - #41 .
+INFO  16:08:37,590 - #48 a
+INFO  16:08:37,590 - #35 =
+INFO  16:08:37,591 - #50 10
+INFO  16:08:37,591 - #38 ;
+INFO  16:08:37,591 - #13 print
+INFO  16:08:37,591 - #42 (
+INFO  16:08:37,591 - #48 neka
+INFO  16:08:37,591 - #41 .
+INFO  16:08:37,591 - #48 a
+INFO  16:08:37,591 - #43 )
+INFO  16:08:37,591 - #38 ;
+INFO  16:08:37,591 - #48 i
+INFO  16:08:37,592 - #35 =
+INFO  16:08:37,592 - #23 -
+INFO  16:08:37,592 - #50 5
+INFO  16:08:37,592 - #22 +
+INFO  16:08:37,592 - #50 5
+INFO  16:08:37,592 - #38 ;
+INFO  16:08:37,592 - #13 print
+INFO  16:08:37,592 - #42 (
+INFO  16:08:37,592 - #48 i
+INFO  16:08:37,592 - #43 )
+INFO  16:08:37,592 - #38 ;
+INFO  16:08:37,592 - #47 }
+INFO  16:08:37,592 - #47 }
+INFO  16:08:37,598 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        NoDeclarations(
+        ) [NoDeclarations]
+        VarDeclaration(
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclaration]
+      ) [Declarations]
+      VarDeclaration(
+        VariableDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclaration]
+    ) [Declarations]
+    ClassDeclaration(
+      ClassDecl1(
+        ClassName(
+          Type(
+           Klasa
+          ) [Type]
+        ) [ClassName]
+        DoesntExtendsClass(
+        ) [DoesntExtendsClass]
+        ErrorClassVarLbrace(
+        ) [ErrorClassVarLbrace]
+        EmptyClassBody2(
+        ) [EmptyClassBody2]
+      ) [ClassDecl1]
+    ) [ClassDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecls(
+        ) [NoMethodDecls]
+        MethodDeclaration(
+          MethodDeclType(
+            Type(
+             int
+            ) [Type]
+           nesto
+          ) [MethodDeclType]
+          NoFormParams(
+          ) [NoFormParams]
+          NoVarDecls(
+          ) [NoVarDecls]
+          MultipleStatements(
+            NotSuperStmt(
+            ) [NotSuperStmt]
+            StatementListNotEmpty(
+              StatementListNotEmpty(
+                StatementListNotEmpty(
+                  NoStatements(
+                  ) [NoStatements]
+                  SingleStatementNoLabel(
+                    PrintStmt(
+                      TermExpression(
+                        SingleFactor(
+                          CharConstFactor(
+                           c
+                          ) [CharConstFactor]
+                        ) [SingleFactor]
+                      ) [TermExpression]
+                      NoNumConstPrint(
+                      ) [NoNumConstPrint]
+                    ) [PrintStmt]
+                  ) [SingleStatementNoLabel]
+                ) [StatementListNotEmpty]
+                SingleStatementNoLabel(
+                  PrintStmt(
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                         5
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                    NoNumConstPrint(
+                    ) [NoNumConstPrint]
+                  ) [PrintStmt]
+                ) [SingleStatementNoLabel]
+              ) [StatementListNotEmpty]
+              SingleStatementNoLabel(
+                ReturnExprStmt(
+                  TermExpression(
+                    SingleFactor(
+                      NumConstFactor(
+                       2
+                      ) [NumConstFactor]
+                    ) [SingleFactor]
+                  ) [TermExpression]
+                ) [ReturnExprStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+          ) [MultipleStatements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        MethodVoidType(
+         kita
+        ) [MethodVoidType]
+        NoFormParams(
+        ) [NoFormParams]
+        NoVarDecls(
+        ) [NoVarDecls]
+        MultipleStatements(
+          NotSuperStmt(
+          ) [NotSuperStmt]
+          NoStatements(
+          ) [NoStatements]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecls(
+            ) [NoVarDecls]
+            VariableDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationList(
+                SingleVar(
+                  SingleVarDeclaration(
+                   x
+                    WithBrackets(
+                    ) [WithBrackets]
+                  ) [SingleVarDeclaration]
+                ) [SingleVar]
+                SingleVarDeclaration(
+                 i
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [VarDeclarationList]
+            ) [VariableDeclaration]
+          ) [VarDeclarations]
+          VariableDeclaration(
+            Type(
+             char
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               c
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           Klasa
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             neka
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            StatementListNotEmpty(
+              StatementListNotEmpty(
+                StatementListNotEmpty(
+                  StatementListNotEmpty(
+                    NoStatements(
+                    ) [NoStatements]
+                    SingleStatementNoLabel(
+                      DesignatorStmt(
+                        DesignatorStatmentNoError(
+                          Designator(
+                            Base(
+                             i
+                            ) [Base]
+                            NoDesignatorAdded(
+                            ) [NoDesignatorAdded]
+                          ) [Designator]
+                          DesignatorAssign(
+                            Assignop(
+                            ) [Assignop]
+                            Expression(
+                              MinusTermExpression(
+                                SingleFactor(
+                                  NumConstFactor(
+                                   5
+                                  ) [NumConstFactor]
+                                ) [SingleFactor]
+                              ) [MinusTermExpression]
+                              AddopPlus(
+                              ) [AddopPlus]
+                              SingleFactor(
+                                NumConstFactor(
+                                 5
+                                ) [NumConstFactor]
+                              ) [SingleFactor]
+                            ) [Expression]
+                          ) [DesignatorAssign]
+                        ) [DesignatorStatmentNoError]
+                      ) [DesignatorStmt]
+                    ) [SingleStatementNoLabel]
+                  ) [StatementListNotEmpty]
+                  SingleStatementNoLabel(
+                    DesignatorStmt(
+                      DesignatorStatmentNoError(
+                        Designator(
+                          Base(
+                           neka
+                          ) [Base]
+                          NoDesignatorAdded(
+                          ) [NoDesignatorAdded]
+                        ) [Designator]
+                        DesignatorAssign(
+                          Assignop(
+                          ) [Assignop]
+                          TermExpression(
+                            SingleFactor(
+                              NewFactor(
+                                ClassName(
+                                  Type(
+                                   Klasa
+                                  ) [Type]
+                                ) [ClassName]
+                                FactorNewNoExpr(
+                                ) [FactorNewNoExpr]
+                              ) [NewFactor]
+                            ) [SingleFactor]
+                          ) [TermExpression]
+                        ) [DesignatorAssign]
+                      ) [DesignatorStatmentNoError]
+                    ) [DesignatorStmt]
+                  ) [SingleStatementNoLabel]
+                ) [StatementListNotEmpty]
+                SingleStatementNoLabel(
+                  DesignatorStmt(
+                    DesignatorStatmentNoError(
+                      Designator(
+                        Base(
+                         neka
+                        ) [Base]
+                        DesignatorAdded(
+                          NoDesignatorAdded(
+                          ) [NoDesignatorAdded]
+                          DesignatorDot(
+                           a
+                          ) [DesignatorDot]
+                        ) [DesignatorAdded]
+                      ) [Designator]
+                      DesignatorAssign(
+                        Assignop(
+                        ) [Assignop]
+                        TermExpression(
+                          SingleFactor(
+                            NumConstFactor(
+                             10
+                            ) [NumConstFactor]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                      ) [DesignatorAssign]
+                    ) [DesignatorStatmentNoError]
+                  ) [DesignatorStmt]
+                ) [SingleStatementNoLabel]
+              ) [StatementListNotEmpty]
+              SingleStatementNoLabel(
+                PrintStmt(
+                  TermExpression(
+                    SingleFactor(
+                      VarFactor(
+                        Designator(
+                          Base(
+                           neka
+                          ) [Base]
+                          DesignatorAdded(
+                            NoDesignatorAdded(
+                            ) [NoDesignatorAdded]
+                            DesignatorDot(
+                             a
+                            ) [DesignatorDot]
+                          ) [DesignatorAdded]
+                        ) [Designator]
+                      ) [VarFactor]
+                    ) [SingleFactor]
+                  ) [TermExpression]
+                  NoNumConstPrint(
+                  ) [NoNumConstPrint]
+                ) [PrintStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                DesignatorStatmentNoError(
+                  Designator(
+                    Base(
+                     i
+                    ) [Base]
+                    NoDesignatorAdded(
+                    ) [NoDesignatorAdded]
+                  ) [Designator]
+                  DesignatorAssign(
+                    Assignop(
+                    ) [Assignop]
+                    Expression(
+                      MinusTermExpression(
+                        SingleFactor(
+                          NumConstFactor(
+                           5
+                          ) [NumConstFactor]
+                        ) [SingleFactor]
+                      ) [MinusTermExpression]
+                      AddopPlus(
+                      ) [AddopPlus]
+                      SingleFactor(
+                        NumConstFactor(
+                         5
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [Expression]
+                  ) [DesignatorAssign]
+                ) [DesignatorStatmentNoError]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            PrintStmt(
+              TermExpression(
+                SingleFactor(
+                  VarFactor(
+                    Designator(
+                      Base(
+                       i
+                      ) [Base]
+                      NoDesignatorAdded(
+                      ) [NoDesignatorAdded]
+                    ) [Designator]
+                  ) [VarFactor]
+                ) [SingleFactor]
+              ) [TermExpression]
+              NoNumConstPrint(
+              ) [NoNumConstPrint]
+            ) [PrintStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:08:37,599 - ===================================
+INFO  16:08:37,602 - Deklarisana promenljiva x na liniji 2
+INFO  16:08:37,602 - Deklarisana promenljiva y na liniji 2
+INFO  16:08:37,602 - Deklarisana  klasa Klasa na liniji 3
+INFO  16:08:37,602 - Obradjuje se funkcija nesto na liniji 12
+INFO  16:08:37,603 - Obradjuje se funkcija kita na liniji 18
+INFO  16:08:37,603 - Obradjuje se funkcija main na liniji 21
+INFO  16:08:37,603 - Deklarisana niz promenljiva x na liniji 21
+INFO  16:08:37,603 - Deklarisana promenljiva i na liniji 21
+INFO  16:08:37,603 - Deklarisana promenljiva c na liniji 21
+INFO  16:08:37,603 - Deklarisana promenljiva neka na liniji 21
+INFO  16:08:37,603 - Pristupa se promenljivoj i na liniji 23
+INFO  16:08:37,603 - Pristupa se promenljivoj neka na liniji 24
+INFO  16:08:37,603 - Kreiran objekat klase Klasa na liniji 24
+ERROR 16:08:37,604 - Greska na liniji:25neispravan designator2! 
+ERROR 16:08:37,604 - Greska na liniji:25 argumenti assign naredbe moraju biti kompatibilni! 1 1
+ERROR 16:08:37,604 - Greska na liniji:26neispravan designator2! 
+ERROR 16:08:37,604 - Greska na liniji:26 vrednost prvog argumenta funkcije print mora biti char, bool ili int 
+INFO  16:08:37,604 - Pristupa se promenljivoj i na liniji 27
+INFO  16:08:37,604 - Pristupa se promenljivoj i na liniji 29
+INFO  16:08:37,604 -  Deklarisanih promenljivih ima = 5
+INFO  16:08:37,604 - ===================================
+ERROR 16:08:37,604 - Parsiranje NIJE uspesno zavrseno

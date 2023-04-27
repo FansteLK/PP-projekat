@@ -1,0 +1,74 @@
+INFO  21:15:26,866 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:15:26,921 - #2 program
+INFO  21:15:26,921 - #51 p
+INFO  21:15:26,921 - #8 const
+INFO  21:15:26,922 - #51 int
+INFO  21:15:26,922 - #51 size
+INFO  21:15:26,923 - #35 =
+INFO  21:15:26,923 - #48 10
+INFO  21:15:26,923 - #38 ;
+INFO  21:15:26,924 - #5 class
+INFO  21:15:26,925 - #51 Klasa
+INFO  21:15:26,925 - #46 {
+INFO  21:15:26,925 - #51 int
+INFO  21:15:26,925 - #51 x
+INFO  21:15:26,926 - #38 ;
+INFO  21:15:26,926 - #46 {
+INFO  21:15:26,927 - #47 }
+INFO  21:15:26,927 - #47 }
+INFO  21:15:26,928 - #46 {
+INFO  21:15:26,928 - #47 }
+INFO  21:15:26,934 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclaration(
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstDeclListDerived1(
+            SingleConstDeclaration(
+             size
+              NumConst(
+              ) [NumConst]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclListDerived1]
+        ) [ConstDecl]
+      ) [ConstDeclaration]
+    ) [Declarations]
+    ClassDeclaration(
+      ClassDecl1(
+       Klasa
+        DoesntExtendsClass(
+        ) [DoesntExtendsClass]
+        CLassVarDeclarations2(
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleClassVar(
+              SingleClassVarDeclaration(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleClassVarDeclaration]
+            ) [SingleClassVar]
+          ) [ClassVarDeclaration]
+        ) [CLassVarDeclarations2]
+        EmptyClassBody2(
+        ) [EmptyClassBody2]
+      ) [ClassDecl1]
+    ) [ClassDeclaration]
+  ) [Declarations]
+  NoMethodDecls(
+  ) [NoMethodDecls]
+) [Program]
+INFO  21:15:26,934 - ===================================
+INFO  21:15:26,937 - Deklarisana promenljiva x na liniji 5
+INFO  21:15:26,938 -  Deklarisanih promenljivih ima = 0
+INFO  21:15:26,938 - ===================================

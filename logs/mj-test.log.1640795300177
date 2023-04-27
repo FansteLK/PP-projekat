@@ -1,0 +1,132 @@
+INFO  17:13:39,054 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  17:13:39,112 - #2 program
+INFO  17:13:39,112 - #48 p
+INFO  17:13:39,113 - #8 const
+INFO  17:13:39,114 - #48 int
+INFO  17:13:39,114 - #48 size
+INFO  17:13:39,114 - #35 =
+INFO  17:13:39,114 - #50 10
+INFO  17:13:39,115 - #38 ;
+INFO  17:13:39,115 - #46 {
+INFO  17:13:39,116 - #3 void
+INFO  17:13:39,117 - #48 main
+INFO  17:13:39,117 - #42 (
+INFO  17:13:39,117 - #43 )
+INFO  17:13:39,118 - #48 int
+INFO  17:13:39,118 - #48 x
+INFO  17:13:39,118 - #40 ,
+INFO  17:13:39,120 - #48 i
+INFO  17:13:39,120 - #38 ;
+INFO  17:13:39,120 - #48 char
+INFO  17:13:39,120 - #48 c
+INFO  17:13:39,120 - #38 ;
+INFO  17:13:39,120 - #46 {
+INFO  17:13:39,128 - #13 print
+INFO  17:13:39,129 - #42 (
+INFO  17:13:39,130 - #50 5
+INFO  17:13:39,130 - #43 )
+INFO  17:13:39,133 - #38 ;
+INFO  17:13:39,133 - #47 }
+INFO  17:13:39,133 - #47 }
+INFO  17:13:39,141 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+             10
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            PrintStmt(
+              TermExpression(
+                SingleFactor(
+                  NumConstFactor(
+                   5
+                  ) [NumConstFactor]
+                ) [SingleFactor]
+              ) [TermExpression]
+              NoNumConstPrint(
+              ) [NoNumConstPrint]
+            ) [PrintStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:13:39,142 - ===================================
+INFO  17:13:39,146 - Deklarisana konstanta size na liniji 2
+INFO  17:13:39,146 - Obradjuje se funkcija main na liniji 5
+INFO  17:13:39,149 - Deklarisana promenljiva x na liniji 5
+INFO  17:13:39,149 - Deklarisana promenljiva i na liniji 5
+INFO  17:13:39,149 - Deklarisana promenljiva c na liniji 5
+INFO  17:13:39,149 -  Deklarisanih promenljivih ima = 2
+INFO  17:13:39,150 - ===================================
+INFO  17:13:39,158 - Parsiranje uspesno zavrseno!

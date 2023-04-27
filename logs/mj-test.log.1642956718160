@@ -1,0 +1,168 @@
+INFO  17:38:40,020 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  17:38:40,076 - #2 program
+INFO  17:38:40,077 - #48 test302
+INFO  17:38:40,077 - #8 const
+INFO  17:38:40,078 - #48 int
+INFO  17:38:40,078 - #48 jedan
+INFO  17:38:40,078 - #35 =
+INFO  17:38:40,079 - #50 1
+INFO  17:38:40,079 - #38 ;
+INFO  17:38:40,080 - #48 int
+INFO  17:38:40,081 - #48 i
+INFO  17:38:40,081 - #38 ;
+INFO  17:38:40,082 - #48 bool
+INFO  17:38:40,082 - #48 ibool
+INFO  17:38:40,082 - #38 ;
+INFO  17:38:40,083 - #48 int
+INFO  17:38:40,083 - #48 niz2
+INFO  17:38:40,083 - #38 ;
+INFO  17:38:40,083 - #46 {
+INFO  17:38:40,083 - #3 void
+INFO  17:38:40,083 - #48 main
+INFO  17:38:40,084 - #42 (
+INFO  17:38:40,092 - #43 )
+INFO  17:38:40,093 - #46 {
+INFO  17:38:40,093 - #14 read
+INFO  17:38:40,094 - #42 (
+INFO  17:38:40,094 - #48 i
+INFO  17:38:40,094 - #43 )
+INFO  17:38:40,094 - #38 ;
+INFO  17:38:40,095 - #13 print
+INFO  17:38:40,095 - #42 (
+INFO  17:38:40,095 - #48 i
+INFO  17:38:40,095 - #43 )
+INFO  17:38:40,095 - #38 ;
+INFO  17:38:40,096 - #47 }
+INFO  17:38:40,096 - #47 }
+INFO  17:38:40,101 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          NoDeclarations(
+          ) [NoDeclarations]
+          ConstDeclaration(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              ConstDeclListDerived1(
+                SingleConstDeclaration(
+                  ConstName(
+                   jedan
+                  ) [ConstName]
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [SingleConstDeclaration]
+              ) [ConstDeclListDerived1]
+            ) [ConstDecl]
+          ) [ConstDeclaration]
+        ) [Declarations]
+        VarDeclaration(
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclaration]
+      ) [Declarations]
+      VarDeclaration(
+        VariableDeclaration(
+          Type(
+           bool
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             ibool
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclaration]
+    ) [Declarations]
+    VarDeclaration(
+      VariableDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           niz2
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VariableDeclaration]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      NoVarDecls(
+      ) [NoVarDecls]
+      MultipleStatements(
+        NotSuperStmt(
+        ) [NotSuperStmt]
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              ReadStmt(
+                SingleDesignator(
+                 i
+                ) [SingleDesignator]
+              ) [ReadStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            PrintStmt(
+              TermExpression(
+                SingleFactor(
+                  VarFactor(
+                    SingleDesignator(
+                     i
+                    ) [SingleDesignator]
+                  ) [VarFactor]
+                ) [SingleFactor]
+              ) [TermExpression]
+              NoNumConstPrint(
+              ) [NoNumConstPrint]
+            ) [PrintStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+        RbraceStatements(
+        ) [RbraceStatements]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:38:40,101 - ===================================
+INFO  17:38:40,106 - Deklarisana konstanta jedan na liniji 5
+INFO  17:38:40,106 - Deklarisana promenljiva i na liniji 7
+INFO  17:38:40,106 - Deklarisana promenljiva ibool na liniji 8
+INFO  17:38:40,106 - Deklarisana promenljiva niz2 na liniji 10
+INFO  17:38:40,107 - Obradjuje se funkcija main na liniji 18
+INFO  17:38:40,107 - Pristupa se promenljivoj i na liniji 19
+INFO  17:38:40,107 - Pristupa se promenljivoj i na liniji 20
+INFO  17:38:40,108 -  Deklarisanih promenljivih ima = 3
+INFO  17:38:40,108 - ===================================
+INFO  17:38:40,112 - Parsiranje uspesno zavrseno!

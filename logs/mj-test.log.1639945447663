@@ -1,0 +1,165 @@
+INFO  21:23:37,075 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:23:37,130 - #2 program
+INFO  21:23:37,130 - #51 p
+INFO  21:23:37,131 - #51 Table
+INFO  21:23:37,132 - #51 val
+INFO  21:23:37,133 - #38 ;
+INFO  21:23:37,134 - #51 Board
+INFO  21:23:37,134 - #51 board
+INFO  21:23:37,134 - #38 ;
+INFO  21:23:37,134 - #46 {
+INFO  21:23:37,135 - #3 void
+INFO  21:23:37,135 - #51 main
+INFO  21:23:37,135 - #42 (
+INFO  21:23:37,135 - #43 )
+INFO  21:23:37,136 - #51 int
+INFO  21:23:37,136 - #51 x
+INFO  21:23:37,136 - #44 [
+INFO  21:23:37,137 - #45 ]
+INFO  21:23:37,137 - #40 ,
+INFO  21:23:37,137 - #51 i
+INFO  21:23:37,137 - #38 ;
+INFO  21:23:37,138 - #51 char
+INFO  21:23:37,138 - #51 c
+INFO  21:23:37,146 - #38 ;
+INFO  21:23:37,146 - #46 {
+INFO  21:23:37,146 - #51 x
+INFO  21:23:37,147 - #44 [
+INFO  21:23:37,148 - #48 2
+ERROR 21:23:37,148 - 
+Sintaksna greska na liniji 9
+INFO  21:23:37,148 - #45 ]
+INFO  21:23:37,148 - #35 =
+INFO  21:23:37,148 - #48 3
+INFO  21:23:37,149 - #38 ;
+INFO  21:23:37,149 - #51 i
+INFO  21:23:37,149 - #44 [
+INFO  21:23:37,149 - #48 1
+ERROR 21:23:37,149 - Izvrsen oporavak konstrukcije dodele u liniji 9
+ERROR 21:23:37,150 - 
+Sintaksna greska na liniji 10
+INFO  21:23:37,150 - #45 ]
+INFO  21:23:37,150 - #35 =
+INFO  21:23:37,150 - #48 2
+INFO  21:23:37,151 - #38 ;
+INFO  21:23:37,151 - #47 }
+INFO  21:23:37,151 - #47 }
+ERROR 21:23:37,151 - Izvrsen oporavak konstrukcije dodele u liniji 10
+INFO  21:23:37,157 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      VarDeclaration(
+        VariableDeclaration(
+          Type(
+           Table
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             val
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclaration]
+    ) [Declarations]
+    VarDeclaration(
+      VariableDeclaration(
+        Type(
+         Board
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           board
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VariableDeclaration]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclaration(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParams(
+      ) [NoFormParams]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecls(
+          ) [NoVarDecls]
+          VariableDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationList(
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  WithBrackets(
+                  ) [WithBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+              SingleVarDeclaration(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [VarDeclarationList]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        VariableDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleVar(
+            SingleVarDeclaration(
+             c
+              NoBrackets(
+              ) [NoBrackets]
+            ) [SingleVarDeclaration]
+          ) [SingleVar]
+        ) [VariableDeclaration]
+      ) [VarDeclarations]
+      MultipleStatements(
+        StatementListNotEmpty(
+          StatementListNotEmpty(
+            NoStatements(
+            ) [NoStatements]
+            SingleStatementNoLabel(
+              DesignatorStmt(
+                ErrorDesignatorStatement(
+                ) [ErrorDesignatorStatement]
+              ) [DesignatorStmt]
+            ) [SingleStatementNoLabel]
+          ) [StatementListNotEmpty]
+          SingleStatementNoLabel(
+            DesignatorStmt(
+              ErrorDesignatorStatement(
+              ) [ErrorDesignatorStatement]
+            ) [DesignatorStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:23:37,158 - ===================================
+ERROR 21:23:37,161 - Nije pronadjen tipTable u tabeli simbola!
+INFO  21:23:37,161 - Deklarisana promenljiva val na liniji 3
+ERROR 21:23:37,161 - Nije pronadjen tipBoard u tabeli simbola!
+INFO  21:23:37,161 - Deklarisana promenljiva board na liniji 4
+INFO  21:23:37,161 - Obradjuje se funkcija main na liniji 7
+INFO  21:23:37,161 - Deklarisana niz promenljiva x na liniji 7
+INFO  21:23:37,161 - Deklarisana promenljiva i na liniji 7
+INFO  21:23:37,161 - Deklarisana promenljiva c na liniji 7
+INFO  21:23:37,161 -  Deklarisanih promenljivih ima = 4
+INFO  21:23:37,161 - ===================================

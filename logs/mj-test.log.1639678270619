@@ -1,0 +1,97 @@
+INFO  18:54:25,838 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:54:25,935 - #2 program
+INFO  18:54:25,935 - #51 MJProgram
+INFO  18:54:25,935 - #51 int
+INFO  18:54:25,936 - #51 x
+INFO  18:54:25,937 - #38 ;
+INFO  18:54:25,939 - #46 {
+INFO  18:54:25,941 - #51 int
+INFO  18:54:25,942 - #51 main
+INFO  18:54:25,942 - #42 (
+INFO  18:54:25,942 - #43 )
+INFO  18:54:25,942 - #46 {
+INFO  18:54:25,944 - #14 return
+INFO  18:54:25,945 - #51 x
+INFO  18:54:25,945 - #24 *
+INFO  18:54:25,946 - #51 y
+INFO  18:54:25,947 - #25 /
+INFO  18:54:25,948 - #51 y
+INFO  18:54:25,949 - #38 ;
+INFO  18:54:25,949 - #47 }
+INFO  18:54:25,950 - #47 }
+INFO  18:54:25,954 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              ReturnExprStmt(
+                ExprDerived2(
+                  TermMul(
+                    TermMul(
+                      SingleFactor(
+                        FactorDerived1(
+                          DesignatorDerived1(
+                           x
+                          ) [DesignatorDerived1]
+                        ) [FactorDerived1]
+                      ) [SingleFactor]
+                      MulopTimes(
+                      ) [MulopTimes]
+                      FactorDerived1(
+                        DesignatorDerived1(
+                         y
+                        ) [DesignatorDerived1]
+                      ) [FactorDerived1]
+                    ) [TermMul]
+                    MulopDiv(
+                    ) [MulopDiv]
+                    FactorDerived1(
+                      DesignatorDerived1(
+                       y
+                      ) [DesignatorDerived1]
+                    ) [FactorDerived1]
+                  ) [TermMul]
+                ) [ExprDerived2]
+              ) [ReturnExprStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:54:25,955 - ===================================
+INFO  18:54:25,958 -  Deklarisanih promenljivih ima = 1

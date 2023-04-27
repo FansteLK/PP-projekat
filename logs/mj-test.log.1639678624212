@@ -1,0 +1,79 @@
+INFO  19:15:51,492 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  19:15:51,590 - #2 program
+INFO  19:15:51,591 - #51 MJProgram
+INFO  19:15:51,591 - #51 int
+INFO  19:15:51,592 - #51 x
+INFO  19:15:51,593 - #38 ;
+INFO  19:15:51,595 - #46 {
+INFO  19:15:51,597 - #51 int
+INFO  19:15:51,598 - #51 main
+INFO  19:15:51,598 - #42 (
+INFO  19:15:51,599 - #43 )
+INFO  19:15:51,599 - #46 {
+INFO  19:15:51,600 - #12 print
+INFO  19:15:51,601 - #42 (
+INFO  19:15:51,601 - #51 nesto
+INFO  19:15:51,602 - #43 )
+INFO  19:15:51,604 - #38 ;
+INFO  19:15:51,604 - #47 }
+INFO  19:15:51,605 - #47 }
+INFO  19:15:51,609 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              PrintStmt(
+                ExprDerived2(
+                  SingleFactor(
+                    FactorDerived1(
+                      DesignatorDerived1(
+                       nesto
+                      ) [DesignatorDerived1]
+                    ) [FactorDerived1]
+                  ) [SingleFactor]
+                ) [ExprDerived2]
+                NoNumConstPrint(
+                ) [NoNumConstPrint]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:15:51,610 - ===================================
+INFO  19:15:51,614 -  Deklarisanih promenljivih ima = 1

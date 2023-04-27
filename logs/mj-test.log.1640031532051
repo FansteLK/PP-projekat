@@ -1,0 +1,297 @@
+INFO  21:18:31,866 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:18:31,924 - #2 program
+INFO  21:18:31,924 - #51 p
+INFO  21:18:31,924 - #8 const
+INFO  21:18:31,925 - #51 int
+INFO  21:18:31,925 - #51 size
+INFO  21:18:31,926 - #35 =
+INFO  21:18:31,926 - #48 10
+INFO  21:18:31,926 - #38 ;
+INFO  21:18:31,927 - #5 class
+INFO  21:18:31,928 - #51 Table
+INFO  21:18:31,928 - #46 {
+INFO  21:18:31,928 - #51 int
+INFO  21:18:31,928 - #51 pos
+INFO  21:18:31,929 - #44 [
+INFO  21:18:31,929 - #45 ]
+INFO  21:18:31,929 - #40 ,
+INFO  21:18:31,930 - #51 neg
+INFO  21:18:31,930 - #44 [
+INFO  21:18:31,930 - #45 ]
+INFO  21:18:31,930 - #38 ;
+INFO  21:18:31,930 - #46 {
+INFO  21:18:31,930 - #3 void
+INFO  21:18:31,931 - #51 putp
+INFO  21:18:31,931 - #42 (
+INFO  21:18:31,932 - #51 int
+INFO  21:18:31,932 - #51 a
+INFO  21:18:31,932 - #40 ,
+INFO  21:18:31,933 - #51 int
+INFO  21:18:31,933 - #51 idx
+INFO  21:18:31,933 - #43 )
+INFO  21:18:31,934 - #46 {
+INFO  21:18:31,934 - #18 this
+ERROR 21:18:31,934 - 
+Sintaksna greska na liniji 7
+INFO  21:18:31,934 - #41 .
+INFO  21:18:31,934 - #51 pos
+INFO  21:18:31,935 - #44 [
+INFO  21:18:31,935 - #51 idx
+INFO  21:18:31,935 - #45 ]
+INFO  21:18:31,935 - #35 =
+INFO  21:18:31,936 - #51 a
+INFO  21:18:31,936 - #38 ;
+INFO  21:18:31,936 - #47 }
+INFO  21:18:31,936 - #3 void
+INFO  21:18:31,936 - #51 putn
+INFO  21:18:31,936 - #42 (
+INFO  21:18:31,936 - #51 int
+INFO  21:18:31,936 - #51 a
+INFO  21:18:31,936 - #40 ,
+INFO  21:18:31,937 - #51 int
+INFO  21:18:31,937 - #51 idx
+INFO  21:18:31,937 - #43 )
+ERROR 21:18:31,937 - Izvrsen oporavak parametara funkcije u liniji 7
+INFO  21:18:31,938 - #46 {
+INFO  21:18:31,938 - #18 this
+ERROR 21:18:31,938 - 
+Sintaksna greska na liniji 8
+INFO  21:18:31,938 - #41 .
+INFO  21:18:31,938 - #51 neg
+INFO  21:18:31,938 - #44 [
+INFO  21:18:31,938 - #51 idx
+INFO  21:18:31,938 - #45 ]
+INFO  21:18:31,938 - #35 =
+INFO  21:18:31,939 - #51 a
+INFO  21:18:31,939 - #38 ;
+INFO  21:18:31,939 - #47 }
+INFO  21:18:31,939 - #51 int
+INFO  21:18:31,939 - #51 getp
+INFO  21:18:31,939 - #42 (
+INFO  21:18:31,939 - #51 int
+INFO  21:18:31,939 - #51 idx
+INFO  21:18:31,939 - #43 )
+INFO  21:18:31,940 - #46 {
+INFO  21:18:31,940 - #15 return
+INFO  21:18:31,940 - #51 pos
+ERROR 21:18:31,940 - Izvrsen oporavak parametara funkcije u liniji 7
+INFO  21:18:31,941 - #44 [
+INFO  21:18:31,941 - #51 idx
+INFO  21:18:31,941 - #45 ]
+INFO  21:18:31,942 - #38 ;
+INFO  21:18:31,943 - #47 }
+INFO  21:18:31,943 - #51 int
+INFO  21:18:31,944 - #51 getn
+INFO  21:18:31,944 - #42 (
+INFO  21:18:31,944 - #51 int
+INFO  21:18:31,944 - #51 idx
+INFO  21:18:31,944 - #43 )
+INFO  21:18:31,944 - #46 {
+INFO  21:18:31,944 - #15 return
+INFO  21:18:31,944 - #51 neg
+INFO  21:18:31,944 - #44 [
+INFO  21:18:31,945 - #51 idx
+INFO  21:18:31,945 - #45 ]
+INFO  21:18:31,945 - #38 ;
+INFO  21:18:31,945 - #47 }
+INFO  21:18:31,945 - #47 }
+INFO  21:18:31,945 - #47 }
+INFO  21:18:31,945 - #46 {
+INFO  21:18:31,946 - #47 }
+INFO  21:18:31,951 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclaration(
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstDeclListDerived1(
+            SingleConstDeclaration(
+             size
+              NumConst(
+              ) [NumConst]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclListDerived1]
+        ) [ConstDecl]
+      ) [ConstDeclaration]
+    ) [Declarations]
+    ClassDeclaration(
+      ClassDecl1(
+       Table
+        DoesntExtendsClass(
+        ) [DoesntExtendsClass]
+        CLassVarDeclarations2(
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationClassList(
+              SingleClassVar(
+                SingleClassVarDeclaration(
+                 pos
+                  WithBrackets(
+                  ) [WithBrackets]
+                ) [SingleClassVarDeclaration]
+              ) [SingleClassVar]
+              SingleClassVarDeclaration(
+               neg
+                WithBrackets(
+                ) [WithBrackets]
+              ) [SingleClassVarDeclaration]
+            ) [VarDeclarationClassList]
+          ) [ClassVarDeclaration]
+        ) [CLassVarDeclarations2]
+        ClassBody2NoConstructorVoid(
+          MethodDeclarationsVoid(
+            MethodDeclarationsVoidList(
+              SingleMethodVoidDeclaration(
+                MethodDeclVoid(
+                  MethodVoidName(
+                   putp
+                  ) [MethodVoidName]
+                  FormParamLs(
+                    SingleFormParam(
+                      ErrorFormParameter(
+                      ) [ErrorFormParameter]
+                    ) [SingleFormParam]
+                  ) [FormParamLs]
+                  NoVarDecls(
+                  ) [NoVarDecls]
+                  MultipleStatements(
+                    StatementListNotEmpty(
+                      NoStatements(
+                      ) [NoStatements]
+                      SingleStatementNoLabel(
+                        ReturnExprStmt(
+                          TermExpression(
+                            SingleFactor(
+                              FunctionCall(
+                                Designator(
+                                  Base(
+                                   pos
+                                  ) [Base]
+                                  DesignatorAdded(
+                                    NoDesignatorAdded(
+                                    ) [NoDesignatorAdded]
+                                    DesignatorArray(
+                                      TermExpression(
+                                        SingleFactor(
+                                          FunctionCall(
+                                            Designator(
+                                              Base(
+                                               idx
+                                              ) [Base]
+                                              NoDesignatorAdded(
+                                              ) [NoDesignatorAdded]
+                                            ) [Designator]
+                                            NoFactorActPars(
+                                            ) [NoFactorActPars]
+                                          ) [FunctionCall]
+                                        ) [SingleFactor]
+                                      ) [TermExpression]
+                                    ) [DesignatorArray]
+                                  ) [DesignatorAdded]
+                                ) [Designator]
+                                NoFactorActPars(
+                                ) [NoFactorActPars]
+                              ) [FunctionCall]
+                            ) [SingleFactor]
+                          ) [TermExpression]
+                        ) [ReturnExprStmt]
+                      ) [SingleStatementNoLabel]
+                    ) [StatementListNotEmpty]
+                  ) [MultipleStatements]
+                ) [MethodDeclVoid]
+              ) [SingleMethodVoidDeclaration]
+              MethodDeclaration(
+                MethodDeclType(
+                  Type(
+                   int
+                  ) [Type]
+                 getn
+                ) [MethodDeclType]
+                FormParamLs(
+                  SingleFormParam(
+                    FormParameter(
+                      Type(
+                       int
+                      ) [Type]
+                     idx
+                      NoBrackets(
+                      ) [NoBrackets]
+                    ) [FormParameter]
+                  ) [SingleFormParam]
+                ) [FormParamLs]
+                NoVarDecls(
+                ) [NoVarDecls]
+                MultipleStatements(
+                  StatementListNotEmpty(
+                    NoStatements(
+                    ) [NoStatements]
+                    SingleStatementNoLabel(
+                      ReturnExprStmt(
+                        TermExpression(
+                          SingleFactor(
+                            FunctionCall(
+                              Designator(
+                                Base(
+                                 neg
+                                ) [Base]
+                                DesignatorAdded(
+                                  NoDesignatorAdded(
+                                  ) [NoDesignatorAdded]
+                                  DesignatorArray(
+                                    TermExpression(
+                                      SingleFactor(
+                                        FunctionCall(
+                                          Designator(
+                                            Base(
+                                             idx
+                                            ) [Base]
+                                            NoDesignatorAdded(
+                                            ) [NoDesignatorAdded]
+                                          ) [Designator]
+                                          NoFactorActPars(
+                                          ) [NoFactorActPars]
+                                        ) [FunctionCall]
+                                      ) [SingleFactor]
+                                    ) [TermExpression]
+                                  ) [DesignatorArray]
+                                ) [DesignatorAdded]
+                              ) [Designator]
+                              NoFactorActPars(
+                              ) [NoFactorActPars]
+                            ) [FunctionCall]
+                          ) [SingleFactor]
+                        ) [TermExpression]
+                      ) [ReturnExprStmt]
+                    ) [SingleStatementNoLabel]
+                  ) [StatementListNotEmpty]
+                ) [MultipleStatements]
+              ) [MethodDeclaration]
+            ) [MethodDeclarationsVoidList]
+          ) [MethodDeclarationsVoid]
+        ) [ClassBody2NoConstructorVoid]
+      ) [ClassDecl1]
+    ) [ClassDeclaration]
+  ) [Declarations]
+  NoMethodDecls(
+  ) [NoMethodDecls]
+) [Program]
+INFO  21:18:31,952 - ===================================
+INFO  21:18:31,954 - Deklarisana  niz promenljiva pos na liniji 5
+INFO  21:18:31,956 - Deklarisana  niz promenljiva neg na liniji 5
+INFO  21:18:31,956 - Obradjuje se funkcija putp na liniji 7
+ERROR 21:18:31,957 - Greska na liniji 9 :ime idx nije deklarisano!
+INFO  21:18:31,957 - Pristupa se elementu niza pos na liniji 9
+INFO  21:18:31,957 - Obradjuje se funkcija getn na liniji 10
+ERROR 21:18:31,957 - Greska na liniji 10 :ime idx nije deklarisano!
+INFO  21:18:31,957 - Pristupa se elementu niza neg na liniji 10
+INFO  21:18:31,957 -  Deklarisanih promenljivih ima = 0
+INFO  21:18:31,957 - ===================================

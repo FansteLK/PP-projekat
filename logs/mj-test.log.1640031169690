@@ -1,0 +1,297 @@
+INFO  21:12:25,406 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  21:12:25,463 - #2 program
+INFO  21:12:25,463 - #51 p
+INFO  21:12:25,463 - #8 const
+INFO  21:12:25,464 - #51 int
+INFO  21:12:25,464 - #51 size
+INFO  21:12:25,465 - #35 =
+INFO  21:12:25,465 - #48 10
+INFO  21:12:25,465 - #38 ;
+INFO  21:12:25,466 - #46 {
+INFO  21:12:25,467 - #51 int
+INFO  21:12:25,468 - #51 k
+INFO  21:12:25,468 - #42 (
+INFO  21:12:25,468 - #51 nesto
+INFO  21:12:25,468 - #43 )
+ERROR 21:12:25,468 - 
+Sintaksna greska na liniji 5
+INFO  21:12:25,468 - #46 {
+INFO  21:12:25,468 - #15 return
+INFO  21:12:25,468 - #48 2
+ERROR 21:12:25,469 - Izvrsen oporavak parametara funkcije u liniji 5
+INFO  21:12:25,478 - #38 ;
+INFO  21:12:25,479 - #47 }
+INFO  21:12:25,480 - #3 void
+INFO  21:12:25,480 - #51 f
+INFO  21:12:25,481 - #42 (
+INFO  21:12:25,481 - #51 char
+INFO  21:12:25,481 - #51 ch
+INFO  21:12:25,481 - #40 ,
+INFO  21:12:25,482 - #51 int
+INFO  21:12:25,482 - #51 a
+INFO  21:12:25,482 - #40 ,
+INFO  21:12:25,482 - #51 int
+INFO  21:12:25,482 - #51 arg
+INFO  21:12:25,482 - #43 )
+INFO  21:12:25,483 - #51 int
+INFO  21:12:25,483 - #51 x
+INFO  21:12:25,483 - #38 ;
+INFO  21:12:25,483 - #46 {
+INFO  21:12:25,483 - #51 x
+INFO  21:12:25,483 - #35 =
+INFO  21:12:25,485 - #51 arg
+INFO  21:12:25,485 - #38 ;
+INFO  21:12:25,486 - #47 }
+INFO  21:12:25,486 - #3 void
+INFO  21:12:25,486 - #51 main
+INFO  21:12:25,487 - #42 (
+INFO  21:12:25,487 - #43 )
+INFO  21:12:25,487 - #51 int
+INFO  21:12:25,487 - #51 x
+INFO  21:12:25,487 - #40 ,
+INFO  21:12:25,487 - #51 i
+INFO  21:12:25,487 - #38 ;
+INFO  21:12:25,488 - #51 char
+INFO  21:12:25,488 - #51 c
+INFO  21:12:25,488 - #38 ;
+INFO  21:12:25,488 - #46 {
+INFO  21:12:25,488 - #47 }
+INFO  21:12:25,488 - #51 int
+INFO  21:12:25,488 - #51 l
+INFO  21:12:25,488 - #42 (
+INFO  21:12:25,488 - #43 )
+INFO  21:12:25,488 - #46 {
+INFO  21:12:25,488 - #47 }
+INFO  21:12:25,488 - #47 }
+INFO  21:12:25,496 - Program(
+  ProgName(
+   p
+  ) [ProgName]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstDeclListDerived1(
+          SingleConstDeclaration(
+           size
+            NumConst(
+            ) [NumConst]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        MethodDeclarations(
+          NoMethodDecls(
+          ) [NoMethodDecls]
+          MethodDeclaration(
+            MethodDeclType(
+              Type(
+               int
+              ) [Type]
+             k
+            ) [MethodDeclType]
+            FormParamLs(
+              SingleFormParam(
+                ErrorFormParameter(
+                ) [ErrorFormParameter]
+              ) [SingleFormParam]
+            ) [FormParamLs]
+            NoVarDecls(
+            ) [NoVarDecls]
+            MultipleStatements(
+              StatementListNotEmpty(
+                NoStatements(
+                ) [NoStatements]
+                SingleStatementNoLabel(
+                  ReturnExprStmt(
+                    TermExpression(
+                      SingleFactor(
+                        NumConstFactor(
+                        ) [NumConstFactor]
+                      ) [SingleFactor]
+                    ) [TermExpression]
+                  ) [ReturnExprStmt]
+                ) [SingleStatementNoLabel]
+              ) [StatementListNotEmpty]
+            ) [MultipleStatements]
+          ) [MethodDeclaration]
+        ) [MethodDeclarations]
+        MethodDeclaration(
+          MethodVoidType(
+           f
+          ) [MethodVoidType]
+          FormParamLs(
+            FormParams(
+              FormParams(
+                SingleFormParam(
+                  FormParameter(
+                    Type(
+                     char
+                    ) [Type]
+                   ch
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [FormParameter]
+                ) [SingleFormParam]
+                FormParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [FormParameter]
+              ) [FormParams]
+              FormParameter(
+                Type(
+                 int
+                ) [Type]
+               arg
+                NoBrackets(
+                ) [NoBrackets]
+              ) [FormParameter]
+            ) [FormParams]
+          ) [FormParamLs]
+          VarDeclarations(
+            NoVarDecls(
+            ) [NoVarDecls]
+            VariableDeclaration(
+              Type(
+               int
+              ) [Type]
+              SingleVar(
+                SingleVarDeclaration(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [SingleVar]
+            ) [VariableDeclaration]
+          ) [VarDeclarations]
+          MultipleStatements(
+            StatementListNotEmpty(
+              NoStatements(
+              ) [NoStatements]
+              SingleStatementNoLabel(
+                DesignatorStmt(
+                  DesignatorStatmentNoError(
+                    Designator(
+                      Base(
+                       x
+                      ) [Base]
+                      NoDesignatorAdded(
+                      ) [NoDesignatorAdded]
+                    ) [Designator]
+                    DesignatorAssign(
+                      Assignop(
+                      ) [Assignop]
+                      TermExpression(
+                        SingleFactor(
+                          FunctionCall(
+                            Designator(
+                              Base(
+                               arg
+                              ) [Base]
+                              NoDesignatorAdded(
+                              ) [NoDesignatorAdded]
+                            ) [Designator]
+                            NoFactorActPars(
+                            ) [NoFactorActPars]
+                          ) [FunctionCall]
+                        ) [SingleFactor]
+                      ) [TermExpression]
+                    ) [DesignatorAssign]
+                  ) [DesignatorStatmentNoError]
+                ) [DesignatorStmt]
+              ) [SingleStatementNoLabel]
+            ) [StatementListNotEmpty]
+          ) [MultipleStatements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        MethodVoidType(
+         main
+        ) [MethodVoidType]
+        NoFormParams(
+        ) [NoFormParams]
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecls(
+            ) [NoVarDecls]
+            VariableDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationList(
+                SingleVar(
+                  SingleVarDeclaration(
+                   x
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [SingleVarDeclaration]
+                ) [SingleVar]
+                SingleVarDeclaration(
+                 i
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [SingleVarDeclaration]
+              ) [VarDeclarationList]
+            ) [VariableDeclaration]
+          ) [VarDeclarations]
+          VariableDeclaration(
+            Type(
+             char
+            ) [Type]
+            SingleVar(
+              SingleVarDeclaration(
+               c
+                NoBrackets(
+                ) [NoBrackets]
+              ) [SingleVarDeclaration]
+            ) [SingleVar]
+          ) [VariableDeclaration]
+        ) [VarDeclarations]
+        MultipleStatements(
+          NoStatements(
+          ) [NoStatements]
+        ) [MultipleStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethodDeclType(
+        Type(
+         int
+        ) [Type]
+       l
+      ) [MethodDeclType]
+      NoFormParams(
+      ) [NoFormParams]
+      NoVarDecls(
+      ) [NoVarDecls]
+      MultipleStatements(
+        NoStatements(
+        ) [NoStatements]
+      ) [MultipleStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:12:25,496 - ===================================
+INFO  21:12:25,500 - Obradjuje se funkcija k na liniji 5
+INFO  21:12:25,500 - Obradjuje se funkcija f na liniji 9
+INFO  21:12:25,501 - Deklarisana promenljiva x na liniji 10
+ERROR 21:12:25,501 - Greska na liniji 12 :ime arg nije deklarisano!
+INFO  21:12:25,501 - Obradjuje se funkcija main na liniji 14
+INFO  21:12:25,501 - Deklarisana promenljiva x na liniji 14
+INFO  21:12:25,501 - Deklarisana promenljiva i na liniji 14
+INFO  21:12:25,501 - Deklarisana promenljiva c na liniji 14
+INFO  21:12:25,501 - Obradjuje se funkcija l na liniji 17
+INFO  21:12:25,502 -  Deklarisanih promenljivih ima = 3
+INFO  21:12:25,502 - ===================================

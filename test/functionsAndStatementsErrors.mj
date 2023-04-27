@@ -1,0 +1,86 @@
+program p
+const int size = 10;
+class Table extends Table{
+int pos[], neg[];
+{
+ Table()
+ {
+  
+ }
+ void putp (int a, int idx) { pos[idx] = a; }
+ void putn (int a, int idx) { neg['C'] = a; }
+ int getp (int idx) { return idx;}
+ int getn (int idx) { return neg[idx]; }
+}
+}
+record Board {
+int rows, columns;
+}
+Table val;
+Board board;
+{
+void f(char ch, int a, int arg)
+int x;
+{
+x = arg;
+}
+void mains() int x, i; char c;
+{
+val = new Table;
+val.pos = new int [size];
+val.neg = new int [size];
+read(x);
+if(x > 5)
+{
+goto skip;
+}
+i = 0;
+continue;
+do{
+val.putp(0, i);
+ val.putn(0, i);
+ i++;
+}while(i<size);
+skip2: f(c, x, i);
+board = new Board;
+read(board.rows);
+x = board.rows;
+do{
+ if(x <= 0) break;
+ if (board <= board || x < size && board<size)
+{
+val.putp(val.getp(x)+1,2);
+}
+else if (-size<x && x<0)
+ {
+val.putn(val.getn(-x),2);
+
+ }
+ x[3]=5;
+ x = new x[3];
+ putp();
+ print(3);
+read(x);
+ }while(true);
+ chr();
+ chr(1,2,3);
+ chr(1);
+ ord('c');
+ ord(5);
+ f('d',size,5);
+ f();
+ f("a",5);
+ 5++;
+ val++;
+ val.pos[2]++;
+ read(val.pos[1]);
+ read('e');
+ read();
+ x=val.pos[3];
+ val=val;
+ x="c";
+}
+void mains2()
+{
+}
+}

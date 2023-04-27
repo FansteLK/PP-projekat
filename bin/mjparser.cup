@@ -1,0 +1,414 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+	boolean errorDetected;
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+init with
+{:
+errorDetected = false;
+:}
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG , VOID, BREAK, CLASS, ENUM, ELSE, CONST, IF, DO, WHILE, NEW, PRINT, READ, RETURN;
+terminal  EXTENDS, CONTINUE, THIS, SUPER, GOTO, RECORD, PLUS, MINUS, TIMES, DIV;
+terminal MOD, EQUAL, NOTEQUAL, GREATER, GTE, LESS, LTE, AND, OR, ASSIGNMENT, INCR, DECR, SEMI, COLON;
+terminal COMMA, DOT, LPAREN, RPAREN, LBRACK, RBRACK, LBRACE, RBRACE;
+terminal String IDENT, BOOLCONST;
+terminal Integer NUMCONST;
+terminal Character CHARCONST;
+
+
+nonterminal   Decls, Decl, ClassBody;
+nonterminal   MethodDecls, Brackets,  MethodDeclsNoIdent, MethodDeclsVoid;
+
+nonterminal  DesignatorStatement, ActPars, Semi, And, Or;
+nonterminal    Assignop, Mulop, Relop, Addop, NumConstPrint, Extends, FormParamList, ActParsList ;
+nonterminal FactorNew, FactorPars , ClassBodyInternal, MethodDeclsVoidList, ExtendsType;
+nonterminal VarDeclsClass,  ClassBody2, VarDeclClassList , VarDeclsClass2,  VarDecls, VarDecl, VarDeclList, SingleVarDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj  ProgName, Program, MethodDecl, MethodTypeName, MethodName, MethodDeclVoid, Do, If, Else, RbraceStatements, While, ConstName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDeclNoIdent, MethodVoidName,  BaseDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj SingleClassVarDecl, VarDeclClass, RecordName, RecordDecl, DesignatorAdd, DesignatorList ;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj FormParam, FormParamTypeName, ClassName, ClassDecl, SuperStatement;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj  Label, ConstructorDecl , FormPars, ConstructorDeclNoIdent, StatementList, Statement, SingleStatement, Statements, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expr, Factor, Term, DesignatorOperation, SingleConstDecl, ConstType, ConstDecl,  ConstDeclList, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct   Condition, CondTerm;
+precedence left ELSE;
+
+//Program
+Program ::= (Program) PROG ProgName:p   Decls LBRACE MethodDecls RBRACE;
+ProgName ::=(ProgName) IDENT:programName;
+Decls ::= (Declarations) Decls  Decl
+		|
+		(NoDeclarations) /* epsilon */
+		;
+Decl ::= (ConstDeclaration) ConstDecl
+		|
+		(VarDeclaration) VarDecl
+		|
+		(ClassDeclaration) ClassDecl
+		|
+		(RecordDeclaration) RecordDecl
+		;
+//ConstDecl
+
+
+ConstDecl ::= (ConstDecl) CONST Type:constType ConstDeclList SEMI;
+ConstDeclList ::= (ConstDeclarationList) ConstDeclList COMMA SingleConstDecl
+		|
+		SingleConstDecl
+		;
+SingleConstDecl ::= (SingleConstDeclaration) ConstName ASSIGNMENT ConstType:constValue;
+ConstName ::= (ConstName) IDENT:constname;
+ConstType ::= (NumConst) NUMCONST:value
+		|
+		(CharConst) CHARCONST:value
+		|
+		(BoolConst) BOOLCONST:value
+		;
+		
+//VarDecl
+
+	
+
+
+VarDeclsClass ::= (ClassVarDeclarations) VarDeclsClass VarDeclClass
+				|
+				(SingleClassDecl) VarDeclClass;
+VarDeclClass ::= (ClassVarDeclaration) Type:varType VarDeclClassList SEMI 
+              |
+	(SingleVarError) error:l15 SEMI
+		{: parser.report_error("Izvrsen oporavak klasne promenljive do ; u liniji " + l15left, null);  :};
+			 
+VarDeclClassList ::= (VarDeclarationClassList) VarDeclClassList COMMA SingleClassVarDecl
+		|
+		(SingleClassVar) SingleClassVarDecl
+		;
+		
+SingleClassVarDecl ::= (SingleClassVarDeclaration) IDENT:varName Brackets;
+ClassBody2::= (Class2BodyNotEmpty)  Type:className ClassBodyInternal RBRACE
+		|
+		(ClassBody2WithConstructorVoids)  ConstructorDecl MethodDeclsVoid RBRACE
+		|
+		(ClassBody2NoConstructorVoid)   MethodDeclsVoid RBRACE
+		|
+		(EmptyClassBody2) RBRACE
+		;			
+		
+VarDecls ::= (VarDeclarations) VarDecls VarDecl
+		|
+		(NoVarDecls) /* epsilon */
+		;
+VarDecl ::= (VariableDeclaration)  Type:varType VarDeclList SEMI;
+		
+
+VarDeclList ::= (VarDeclarationList) VarDeclList COMMA SingleVarDecl
+		|
+		(SingleVar) SingleVarDecl
+		;
+
+SingleVarDecl ::= (SingleVarDeclaration) IDENT:varName Brackets
+			|
+		 (ErrorDecl) error:l
+		   {: parser.report_error("Izvrsen oporavak globalne promenljive u liniji " + lleft, null);  :}
+		    ;		
+		
+		
+		
+
+//ClassDecl
+ClassDecl ::= (ClassDecl1) CLASS ClassName:className Extends LBRACE VarDeclsClass LBRACE ClassBody2 RBRACE
+				|
+				(ClassDecl2) CLASS ClassName:className Extends LBRACE ClassBody RBRACE
+				;
+ClassName ::= (ClassName) Type:classType;
+		
+Extends ::= (ExtendClass) EXTENDS ExtendsType:t
+		|
+		(DoesntExtendsClass) /* epsilon */
+		;
+ExtendsType ::= (ExtendedClassType) Type:extendedClassType
+			|
+ 		 	(ErrorExtends) error:l7
+		   	{: parser.report_error("Izvrsen oporavak deklaracije prosirenja natklase u liniji " + l7left, null);  :}
+		    ;
+					
+	
+ClassBody::= (ClassBodyNotEmpty) LBRACE Type:className ClassBodyInternal RBRACE
+		|
+		(ClassBodyWithConstructorVoid) LBRACE  ConstructorDecl MethodDeclsVoid RBRACE
+		|
+		(ClassBodyNoConstructorVoid) LBRACE  MethodDeclsVoid RBRACE
+		|
+		(EmptyClassBody) /* epsilon */
+		;
+ClassBodyInternal ::= (ClassBodyWithConstructor) ConstructorDeclNoIdent Type:type MethodDeclsNoIdent 
+		|
+		(ClassBodyNoConstructor) MethodDeclsNoIdent
+		;
+
+//RecordDecl		
+RecordDecl ::= (RecordDecl) RECORD RecordName LBRACE VarDecls RBRACE;
+RecordName ::= (RecordName) Type:recordName;
+//ConstructorDecl
+ConstructorDecl ::=(ConstructorDecl) Type:className LPAREN RPAREN VarDecls Statements;
+ConstructorDeclNoIdent ::=(ConstructorDeclNoIdent) LPAREN RPAREN VarDecls Statements ;
+
+//MethodDecl
+
+MethodDecl ::= (MethodDeclaration) MethodTypeName:m  LPAREN FormParamList RPAREN VarDecls Statements ;
+
+MethodTypeName ::= (MethodDeclType) Type:retType IDENT:methodName 
+		|
+		(MethodVoidType) VOID IDENT:methodName 
+		;
+MethodDecls ::= (MethodDeclarations) MethodDecls MethodDecl
+		|
+		(NoMethodDecls) /* epsilon */
+		;
+MethodDeclVoid ::= (MethodDeclVoid) VOID MethodVoidName LPAREN FormParamList RPAREN  VarDecls  Statements;
+MethodVoidName ::=(MethodVoidName) IDENT:methodName;
+MethodName ::=(MethodName) IDENT:methodName;
+MethodDeclsVoidList ::= (MethodDeclarationsVoidList) MethodDeclsVoidList MethodDecl
+		|
+		(SingleMethodVoidDeclaration) MethodDeclVoid
+		;	
+MethodDeclsVoid ::= (MethodDeclarationsVoid) MethodDeclsVoidList;
+MethodDeclNoIdent ::= (MethodDeclNoId) MethodName  LPAREN FormParamList RPAREN VarDecls  Statements ;
+
+MethodDeclsNoIdent ::= (MethodDeclarationsNoId) MethodDeclsNoIdent MethodDecl
+		|
+		(SingleMethodDeclarationNoId) MethodDeclNoIdent;
+Brackets ::=(WithBrackets) LBRACK RBRACK
+		|
+		(NoBrackets) /* epsilon */
+		;
+//FormPars
+
+FormParamList ::=(FormParamLs) FormPars:f
+		|
+		(NoFormParams) /* epsilon */
+		;
+FormPars::= (FormParams) FormPars COMMA FormParam
+		|
+		(SingleFormParam) FormParam
+		;
+FormParam ::= (FormParameter) Type:type IDENT:paramName Brackets:brackets
+		|
+		(ErrorFormParameter) error:l4
+		  {: parser.report_error("Izvrsen oporavak parametara funkcije u liniji " + l4left, null);  :}
+		  ;
+
+			
+
+
+Type ::= (Type) IDENT:typeName;
+
+//Statement
+StatementList ::= (StatementListNotEmpty) StatementList Statement
+		|
+		(NoStatements) /* epsilon */
+		
+		;
+SuperStatement ::= (SuperStmt) SUPER LPAREN RPAREN SEMI
+		|
+		(NotSuperStmt) /* epislon */
+		;
+Statement ::= (SingleStatementNoLabel) SingleStatement
+		|
+		(SingleStatementWithIdent) Label:l COLON SingleStatement
+		|
+		(Stmts) Statements
+		;
+
+			
+SingleStatement ::= (DesignatorStmt) DesignatorStatement 
+		   |
+		   (DoWhileStmt) Do Statement While LPAREN Condition RPAREN SEMI
+		   |
+		   (BreakStmt) BREAK SEMI
+		   |
+		   (ContinueStmt) CONTINUE SEMI
+		   |
+		   (ReturnExprStmt) RETURN Expr:t SEMI
+		   |
+		   (ReturnNoExprStmt) RETURN SEMI
+		   |
+		   (PrintStmt) PRINT LPAREN Expr:t  NumConstPrint RPAREN SEMI
+		   |
+		   (ReadStmt) READ LPAREN Designator:d RPAREN SEMI
+		   |
+		   (GoToStmt) GOTO Label:labelName SEMI
+		   |
+		   (MatchedStatement) If LPAREN Condition RPAREN Statement Else Statement
+		   |
+		   (UnmatchedStatement) If LPAREN Condition RPAREN Statement
+		   ;
+While ::= (While) WHILE;
+Do ::= (Do) DO;
+If ::= (If) IF;
+Else ::=(Else) ELSE; 
+Semi ::= (Semi) SEMI;
+
+NumConstPrint ::= (NumConstant) COMMA NUMCONST:value
+		|
+		(NoNumConstPrint) /* epsilon */
+		;
+
+		
+Statements::= (MultipleStatements) LBRACE SuperStatement:ss StatementList:sl RbraceStatements;
+RbraceStatements ::= (RbraceStatements) RBRACE;
+DesignatorStatement ::=(DesignatorStatmentNoError) Designator:d DesignatorOperation SEMI
+						|
+						(ErrorDesignatorStatement)  error SEMI:l3
+						{: parser.report_error("Izvrsen oporavak konstrukcije dodele u liniji " + l3left, null);  :}
+						;
+						
+			
+
+DesignatorOperation ::=(DesignatorAssign) Assignop Expr:e  
+		|
+		(DesignatorFuncCall) LPAREN ActParsList RPAREN
+		|
+		(DesignatorIncrement) INCR
+		|
+		(DesignatorDecrement) DECR
+		;
+ActParsList ::= (ActualParsList) ActPars
+		|
+		(EmptyActualParsList) /* epsilon */
+		;
+ActPars ::= (ActualPars) ActPars COMMA Expr:e
+		|
+		(SingleExpr) Expr
+		;
+
+Condition ::= (ConditionTerms) Condition Or CondTerm
+		|
+		(SingleCondTerm) CondTerm
+		;
+Or ::=(Or) OR;
+CondTerm ::= (ConditionTerm) CondTerm And CondFact
+		| 
+		(SingleCondFact) CondFact
+		;
+And ::=(And) AND;
+CondFact ::= (ConditionFact) Expr:e1 Relop Expr:e2
+		|
+		(CondFactExpr) Expr:e
+		;
+Expr ::= (Expression) Expr:te Addop Term:t
+		|
+		(MinusTermExpression) MINUS Term:t
+		|
+		(TermExpression) Term:t
+		;
+Term ::=(TermMul) Term:tf Mulop Factor:t
+		|
+		(SingleFactor) Factor:t
+		;
+
+Factor ::=(FunctionCall) Designator:func FactorPars
+		|
+		(VarFactor) Designator:d
+		|
+		(NumConstFactor) NUMCONST:value
+		|
+		(CharConstFactor) CHARCONST:value
+		|
+		(BoolConstFactor ) BOOLCONST:value
+		|
+		(NewFactor) NEW ClassName:className FactorNew:Fn
+		|
+		(FactorExpr) LPAREN Expr RPAREN
+		|
+		(ErrorFactor) error:l6
+		{: parser.report_error("Izvrsen oporavak logickog izraza unutar if-a u liniji " + l6left, null);  :}
+		;
+
+FactorPars ::= (FactorActPars) LPAREN ActParsList RPAREN;
+			
+FactorNew ::= (FactorNewExpr)  LBRACK Expr RBRACK
+		|
+		(FactorNewNoExpr) /* epsilon */
+		;
+Designator ::= (SingleDesignator) IDENT:name
+		|
+		(DesignatorArray) Designator LBRACK Expr RBRACK
+		|
+		(DesignatorDot) Designator DOT IDENT:name
+		;
+		
+
+		
+Label ::= (Label) IDENT:labelName;
+
+Assignop ::= (Assignop) ASSIGNMENT;
+
+Relop ::= (RelopEqual) EQUAL
+		|
+		(RelopNotEqual) NOTEQUAL
+		|
+		(RelopGreater) GREATER
+		|
+		(RelopGTE) GTE
+		|
+		(RelopLess) LESS
+		|
+		(RelopLTE) LTE
+		;
+Addop ::= (AddopPlus) PLUS
+		|
+		(AddopMinus) MINUS
+		;
+		
+Mulop ::= (MulopTimes) TIMES
+		|
+		(MulopDiv) DIV
+		|
+		(MulopMod) MOD
+		;
+		
+
+
+
+		

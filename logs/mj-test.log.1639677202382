@@ -1,0 +1,72 @@
+INFO  18:43:23,009 - Compiling source file: C:\Users\stefa\Desktop\Izvorni kod\MjCompiler\test\program.mj
+INFO  18:43:23,086 - #2 program
+INFO  18:43:23,086 - #51 MJProgram
+INFO  18:43:23,086 - #51 int
+INFO  18:43:23,087 - #51 x
+INFO  18:43:23,088 - #38 ;
+INFO  18:43:23,089 - #46 {
+INFO  18:43:23,091 - #51 int
+INFO  18:43:23,092 - #51 main
+INFO  18:43:23,092 - #42 (
+INFO  18:43:23,092 - #43 )
+INFO  18:43:23,092 - #46 {
+INFO  18:43:23,093 - #14 return
+INFO  18:43:23,094 - #48 10
+INFO  18:43:23,095 - #38 ;
+INFO  18:43:23,096 - #47 }
+INFO  18:43:23,097 - #47 }
+INFO  18:43:23,100 - Program(
+ MJProgram
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclaration(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        SingleVar(
+          SingleVarDeclaration(
+           x
+            NoBrackets(
+            ) [NoBrackets]
+          ) [SingleVarDeclaration]
+        ) [SingleVar]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDecls(
+    ) [NoMethodDecls]
+    MethodDeclNoFormPars(
+      NoVoidMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [NoVoidMethodType]
+     main
+      NoVarDecls(
+      ) [NoVarDecls]
+      Statements(
+        StatementListNotEmpty(
+          NoStatements(
+          ) [NoStatements]
+          SingleStatementNoLabel(
+            MatchedStmt(
+              ReturnExprStmt(
+                ExprDerived2(
+                  SingleFactor(
+                    NumConstFactor(
+                    ) [NumConstFactor]
+                  ) [SingleFactor]
+                ) [ExprDerived2]
+              ) [ReturnExprStmt]
+            ) [MatchedStmt]
+          ) [SingleStatementNoLabel]
+        ) [StatementListNotEmpty]
+      ) [Statements]
+    ) [MethodDeclNoFormPars]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:43:23,100 - ===================================
+INFO  18:43:23,103 -  Deklarisanih promenljivih ima = 1
