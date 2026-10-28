@@ -5,12 +5,9 @@ package rs.ac.bg.etf.pp1;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.concurrent.locks.Condition;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
 
 import org.apache.log4j.Logger;
-import org.w3c.dom.CDATASection;
 
 import java.util.Stack;
 import rs.ac.bg.etf.pp1.CounterVisitor.FieldsCounter;
@@ -296,7 +293,9 @@ public class CodeGenerator extends VisitorAdaptor{
 	public void visit(SingleDesignator singleDesignator) 
 	{
 	
-	if (!DesignatorStatmentNoError.class.isInstance(singleDesignator.getParent())&&!ReadStmt.class.isInstance(singleDesignator.getParent())) 
+	// A method name is not a value: calls are emitted when the call node is visited.
+	if (!DesignatorStatmentNoError.class.isInstance(singleDesignator.getParent())&&!ReadStmt.class.isInstance(singleDesignator.getParent())
+			&& singleDesignator.obj.getKind() != Obj.Meth) 
 	{
 	
 		Code.load(singleDesignator.obj);
@@ -329,6 +328,8 @@ public class CodeGenerator extends VisitorAdaptor{
 		Obj funcObj=designatorStatmentNoError.getDesignator().obj;
 	    if (funcObj.getName().equals("ord")||funcObj.getName().equals("chr")||funcObj.getName().equals("len")) 
 	    {
+	    	// Built-in called as a statement: discard the argument left on the stack.
+	    	Code.put(Code.pop);
 	    	return;
 	    }
 		int offset=funcObj.getAdr()-Code.pc;
@@ -343,7 +344,13 @@ public class CodeGenerator extends VisitorAdaptor{
 	{  
           
 		Obj funcObj=functionCall.getDesignator().obj;
-		 if (funcObj.getName().equals("ord")||funcObj.getName().equals("chr")||funcObj.getName().equals("len")) 
+		 // ord and chr only change the static type; len needs the array length instruction.
+		 if (funcObj.getName().equals("len"))
+		    {
+		    	Code.put(Code.arraylength);
+		    	return;
+		    }
+		 if (funcObj.getName().equals("ord")||funcObj.getName().equals("chr")) 
 		    {
 		    	return;
 		    }
