@@ -1,0 +1,36 @@
+// Built-in functions (len, ord, chr), records, labels with goto and char arrays.
+
+program builtins
+
+	record Point {
+		int x;
+		int y;
+	}
+
+	Point p;
+	char word[];
+
+{
+	void main()
+		int i;
+	{
+		word = new char[5];
+		word[0] = 'h'; word[1] = 'e'; word[2] = 'l'; word[3] = 'l'; word[4] = 'o';
+
+		// Print the word upper-cased using ord/chr arithmetic.
+		i = 0;
+	next:
+		print(chr(ord(word[i]) - 32));
+		i++;
+		if (i < len(word)) goto next;
+		print(eol);
+
+		p = new Point;
+		p.x = 3;
+		p.y = 4;
+		print(p.x * p.x + p.y * p.y);
+		print(eol);
+		print(len(word) * 10);
+		print(eol);
+	}
+}

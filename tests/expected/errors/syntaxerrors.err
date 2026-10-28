@@ -1,0 +1,32 @@
+ERROR 
+Sintaksna greska na liniji 6
+ERROR Izvrsen oporavak globalne promenljive u liniji 6
+ERROR 
+Sintaksna greska na liniji 7
+ERROR Izvrsen oporavak globalne promenljive u liniji 7
+ERROR 
+Sintaksna greska na liniji 15
+ERROR Izvrsen oporavak klasne promenljive do ; u liniji 13
+ERROR 
+Sintaksna greska na liniji 23
+ERROR Izvrsen oporavak parametara funkcije u liniji 23
+ERROR 
+Sintaksna greska na liniji 31
+ERROR Izvrsen oporavak konstrukcije dodele u liniji 31
+ERROR 
+Sintaksna greska na liniji 32
+ERROR Izvrsen oporavak logickog izraza unutar if-a u liniji 32
+ERROR Semanticka greska na liniji 23: funkcija sum nema return iskaz!
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "rs.etf.pp1.symboltable.concepts.Struct.getKind()" because "rs.ac.bg.etf.pp1.ast.UnmatchedStatement.getCondition().struct" is null
+	at rs.ac.bg.etf.pp1.SemanticAnalyzer.visit(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.UnmatchedStatement.accept(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.UnmatchedStatement.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.SingleStatementNoLabel.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.StatementListNotEmpty.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.StatementListNotEmpty.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.MultipleStatements.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.MethodDeclaration.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.MethodDeclarations.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.ast.Program.traverseBottomUp(Unknown Source)
+	at rs.ac.bg.etf.pp1.Compiler.compile(Unknown Source)
+	at rs.ac.bg.etf.pp1.Compiler.main(Unknown Source)

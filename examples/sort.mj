@@ -1,0 +1,72 @@
+// Reads n numbers, sorts them with insertion sort and prints them,
+// followed by the sum and the maximum. Exercises arrays, methods with
+// parameters and return values, nested do-while loops, break and && / ||.
+
+program sort
+
+	const int MAX = 100;
+
+	int data[];
+	int n;
+
+{
+	void readAll()
+		int i;
+	{
+		read(n);
+		if (n > MAX) n = MAX;
+		data = new int[n];
+		i = 0;
+		do {
+			read(data[i]);
+			i++;
+		} while (i < n);
+	}
+
+	void insertionSort()
+		int i, j, key;
+	{
+		i = 1;
+		do {
+			if (i >= n) break;
+			key = data[i];
+			j = i - 1;
+			do {
+				if (j < 0 || data[j] <= key) break;
+				data[j + 1] = data[j];
+				j--;
+			} while (j >= 0);
+			data[j + 1] = key;
+			i++;
+		} while (i < n);
+	}
+
+	int sum()
+		int i, s;
+	{
+		s = 0;
+		i = 0;
+		do {
+			s = s + data[i];
+			i++;
+		} while (i < n);
+		return s;
+	}
+
+	void main()
+		int i;
+	{
+		readAll();
+		insertionSort();
+		i = 0;
+		do {
+			print(data[i], 4);
+			i++;
+		} while (i < n);
+		print(eol);
+		print(sum());
+		print(eol);
+		print(data[n - 1]);
+		print(eol);
+	}
+}

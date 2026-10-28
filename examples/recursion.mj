@@ -1,0 +1,42 @@
+// Recursive methods: factorial, Fibonacci (with local variables) and
+// Euclid's GCD with two parameters.
+
+program recursion
+
+{
+	int fact(int n)
+	{
+		if (n <= 1) return 1;
+		return n * fact(n - 1);
+	}
+
+	int fib(int n)
+		int a, b;
+	{
+		if (n < 2) return n;
+		a = fib(n - 1);
+		b = fib(n - 2);
+		return a + b;
+	}
+
+	int gcd(int a, int b)
+	{
+		if (b == 0) return a;
+		return gcd(b, a % b);
+	}
+
+	void main()
+		int i;
+	{
+		print(fact(10));
+		print(eol);
+		i = 0;
+		do {
+			print(fib(i), 4);
+			i++;
+		} while (i < 12);
+		print(eol);
+		print(gcd(1071, 462));
+		print(eol);
+	}
+}
