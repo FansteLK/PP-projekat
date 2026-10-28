@@ -615,7 +615,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (found) {
 			//Form Actual Paramas--------------------------------------------------------------------------------------------------------
 			
-			Collection<Obj> collection=	funcObj.getLocalSymbols();
+			Collection<Obj> collection=	parametersOf(funcObj);
 		     Obj[]  objArray= new Obj[collection.size()];
 		     collection.toArray(objArray);
 		     ArrayList<Obj> formParams=new ArrayList<>();
@@ -738,7 +738,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				//CHR ORD LEN--------------------------------------------------------------------------------------------------
 				//Form Actual Paramas--------------------------------------------------------------------------------------------------------
 				else {
-				Collection<Obj> collection=	baseObj.getLocalSymbols();
+				Collection<Obj> collection=	parametersOf(baseObj);
 			     Obj[]  objArray= new Obj[collection.size()];
 			     collection.toArray(objArray);
 			     ArrayList<Obj> formParams=new ArrayList<>();
@@ -840,7 +840,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (found) {
 			//Form Actual Paramas--------------------------------------------------------------------------------------------------------
 			
-			Collection<Obj> collection=	funcObj.getLocalSymbols();
+			Collection<Obj> collection=	parametersOf(funcObj);
 		     Obj[]  objArray= new Obj[collection.size()];
 		     collection.toArray(objArray);
 		     ArrayList<Obj> formParams=new ArrayList<>();
@@ -963,7 +963,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				//CHR ORD LEN--------------------------------------------------------------------------------------------------
 				//Form Actual Paramas--------------------------------------------------------------------------------------------------------
 				else {
-				Collection<Obj> collection=	baseObj.getLocalSymbols();
+				Collection<Obj> collection=	parametersOf(baseObj);
 			     Obj[]  objArray= new Obj[collection.size()];
 			     collection.toArray(objArray);
 			     ArrayList<Obj> formParams=new ArrayList<>();
@@ -1878,6 +1878,13 @@ public void visit(DesignatorAssign designatorAssign)
 }
 //*************************************************************************
 
+
+// While a method body is analyzed its parameters live only in the open scope;
+// getLocalSymbols() is filled when the scope closes. Needed for recursive calls.
+private Collection<Obj> parametersOf(Obj method)
+{
+	return method == currentMethod ? Tab.currentScope.values() : method.getLocalSymbols();
+}
 
 public boolean sameSignature(Obj baseObj,FormParamList formParams2) 
 {
