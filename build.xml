@@ -1,77 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MJCompiler" default="compile" basedir=".">
+<project name="MJCompiler" default="jar" basedir=".">
 
-	<target name="delete">
-		<delete>
-			<fileset dir="src/rs/ac/bg/etf/pp1">
-				<exclude name="sym_old.java"/>
-				<exclude name="util/Log4JUtils.java"/>
-				<exclude name="Yylex.java"/>
-				<exclude name="RuleVisitor.java"/>
-				<exclude name="SemanticAnalyzer.java"/>
-				<exclude name="CodeGenerator.java"/>
-				<exclude name="CounterVisitor.java"/>
-			</fileset>
-		</delete>
-		<delete>
-			<fileset dir="spec">
-				<exclude name="mjlexer.lex"/>
-				<exclude name="mjparser.cup"/>
-			</fileset>
-		</delete>
+	<property name="pkg.dir" value="src/rs/ac/bg/etf/pp1"/>
+	<property name="build.dir" value="build"/>
+	<property name="classes.dir" value="${build.dir}/classes"/>
+
+	<path id="libs">
+		<fileset dir="lib" includes="*.jar"/>
+	</path>
+
+	<target name="clean" description="Remove build output and generated sources">
+		<delete dir="${build.dir}"/>
+		<delete dir="${pkg.dir}/ast"/>
+		<delete file="${pkg.dir}/MJParser.java"/>
+		<delete file="${pkg.dir}/sym.java"/>
+		<delete file="${pkg.dir}/Yylex.java"/>
+		<delete file="spec/mjparser_astbuild.cup"/>
 	</target>
 
-	<target name="lexerGen" depends="delete">
-		<java jar="lib/JFlex.jar" fork="true">
-			<arg value="-d"/>
-			<arg value="./src/rs/ac/bg/etf/pp1"/>
-			<arg value="spec/mjlexer.lex"/>
+	<target name="lexer" description="Generate the lexer from spec/mjlexer.lex">
+		<java jar="lib/JFlex.jar" fork="true" failonerror="true">
+			<arg line="-q -d ${pkg.dir} spec/mjlexer.lex"/>
 		</java>
 	</target>
 
-	<target name="parserGen" depends="delete">
-		<java jar="lib/cup_v10k.jar" fork="true">
-			<arg value="-destdir"/>
-			<arg value="src/rs/ac/bg/etf/pp1"/>
-			<arg value="-ast"/>
-			<arg value="src.rs.ac.bg.etf.pp1.ast"/>
-			<arg value="-parser"/>
-			<arg value="MJParser"/>
-			<arg value="-dump_states"/>
-			<arg value="-buildtree"/>
-			<arg value="spec/mjparser.cup"/>
+	<target name="parser" description="Generate the LALR(1) parser and AST classes from spec/mjparser.cup">
+		<delete dir="${pkg.dir}/ast"/>
+		<java jar="lib/cup_v10k.jar" fork="true" failonerror="true">
+			<arg line="-destdir ${pkg.dir} -ast src.rs.ac.bg.etf.pp1.ast -parser MJParser -buildtree spec/mjparser.cup"/>
 		</java>
+		<!-- CUP derives the AST package from the destination path; fix it up. -->
+		<replace dir="src" value="rs.ac.bg.etf.pp1.ast" token="src.rs.ac.bg.etf.pp1.ast"/>
 	</target>
 
-	<target name="repackage" depends="parserGen">
-		<!-- Replaces all of the references to the old package name in files in the "src" directory -->
-		<replace dir="src" value="rs.ac.bg.etf.pp1.ast" token="src.rs.ac.bg.etf.pp1.ast" summary="true"/>
-	</target>
+	<target name="generate" depends="lexer,parser"/>
 
-	<target name="compile" depends="repackage">
-		<javac srcdir="src/rs/ac/bg/etf/pp1" includeantruntime="false">
-			<classpath>
-				<pathelement path="lib/JFlex.jar"/>
-				<pathelement path="lib/cup_v10k.jar"/>
-				<pathelement path="lib/log4j-1.2.17.jar"/>
-				<pathelement path="lib/symboltable.jar"/>
-				<pathelement path="mj-runtime-1.1.jar"/>
-			</classpath>
+	<target name="compile" depends="generate" description="Compile the compiler">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="src" destdir="${classes.dir}" includeantruntime="false" release="8" nowarn="true" encoding="UTF-8">
+			<classpath refid="libs"/>
+			<compilerarg value="-Xlint:-options"/>
 		</javac>
-
+		<!-- Bundle the logging config so it is found before anything else on the classpath. -->
+		<copy file="config/log4j.xml" todir="${classes.dir}"/>
 	</target>
-<target name="disasm">
-	<java classname="rs.etf.pp1.mj.runtime.disasm">
-		<arg value="test/program.obj"/>
-		<classpath>
-			<pathelement location="lib/mj-runtime-1.1.jar"/>
-		</classpath>
-		</java>
-</target>
-	<target name="runObj" depends="disasm" >
-	<java classname="rs.etf.pp1.mj.runtime.Run" >
-	<arg value="test/program.obj" />
-    <arg value="-debug"/>
-	<classpath><pathelement location="lib/mj-runtime-1.1.jar"/></classpath>
-	</java></target>
+
+	<target name="jar" depends="compile" description="Build build/mjc.jar">
+		<manifestclasspath property="jar.classpath" jarfile="${build.dir}/mjc.jar">
+			<classpath refid="libs"/>
+		</manifestclasspath>
+		<jar destfile="${build.dir}/mjc.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="rs.ac.bg.etf.pp1.Compiler"/>
+				<attribute name="Class-Path" value="${jar.classpath}"/>
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="test" depends="jar" description="Compile and run every example, compare with expected output">
+		<exec executable="bash" failonerror="true">
+			<arg value="tests/run-tests.sh"/>
+		</exec>
+	</target>
 </project>

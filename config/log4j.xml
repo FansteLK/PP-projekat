@@ -3,24 +3,18 @@
 
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
+	<!-- Diagnostics go to stderr so program output on stdout stays clean. -->
 	<appender name="console" class="org.apache.log4j.ConsoleAppender">
-		<param name="Target" value="System.out" />
+		<param name="Target" value="System.err" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%-5p %d{ABSOLUTE} - %m%n" />
+			<param name="ConversionPattern" value="%-5p %m%n" />
 		</layout>
 	</appender>
 
-	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="logs/mj.log"></param>
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%-5p %d{ABSOLUTE} - %m%n"></param>
-		</layout>
-	</appender>
-	
+	<!-- Errors only by default; `mjc -v` switches to DEBUG (tokens, declarations, calls). -->
 	<root>
-		<priority value="debug" />
-		<appender-ref ref="file" />
+		<priority value="warn" />
 		<appender-ref ref="console" />
 	</root>
 
-</log4j:configuration>  
+</log4j:configuration>

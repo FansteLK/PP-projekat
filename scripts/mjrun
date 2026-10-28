@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Run compiled MicroJava bytecode: scripts/mjrun program.obj [-debug]
+# Disassemble instead:            scripts/mjrun --disasm program.obj
+root="$(cd "$(dirname "$0")/.." && pwd)"
+cp="$root/lib/mj-runtime-1.1.jar"
+if [[ "${1:-}" == "--disasm" ]]; then shift; exec java -cp "$cp" rs.etf.pp1.mj.runtime.disasm "$@"; fi
+exec java -cp "$cp" rs.etf.pp1.mj.runtime.Run "$@"

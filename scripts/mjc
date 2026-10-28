@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Compile a MicroJava source file: scripts/mjc [-v] [--ast] [--symbols] program.mj [program.obj]
+root="$(cd "$(dirname "$0")/.." && pwd)"
+[[ -f "$root/build/mjc.jar" ]] || (cd "$root" && ant -q jar >/dev/null) || exit 1
+exec java -jar "$root/build/mjc.jar" "$@"
