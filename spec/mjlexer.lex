@@ -35,6 +35,7 @@ import java_cup.runtime.Symbol;
 "\b" 	{ }
 "\t" 	{ }
 "\r\n" 	{ }
+"\r" 	{ }
 "\n" { }
 "\f" 	{ }
 
@@ -87,11 +88,11 @@ import java_cup.runtime.Symbol;
 
 "//" {yybegin(COMMENT);}
 <COMMENT> . {yybegin(COMMENT);}
-<COMMENT> "\r\n" { yybegin(YYINITIAL); }
+<COMMENT> "\r\n"|"\n"|"\r" { yybegin(YYINITIAL); }
 
 ("true"|"false") {return new_symbol(sym.BOOLCONST, yytext() );}
 [0-9]+  { return  new_symbol(sym.NUMCONST,new Integer (yytext())); }
-([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
+[a-zA-Z][a-zA-Z0-9_]* 	{return new_symbol (sym.IDENT, yytext()); }
 \'.{1}\' {return new_symbol(sym.CHARCONST, new Character(yytext().charAt(1)));}
 
 . { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); }
